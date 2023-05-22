@@ -1,0 +1,43 @@
+//-- переменные
+@import '../variables/variables.scss';
+
+.supply-main-section__main-img {    
+    width: 100%;
+    height: 720px;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: $borderColorMax;
+    background-image: url(../img/supply-page/main-img-section_1440.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.supply-main-section__title {
+    font-family: $ffTitle;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 122px;
+    color: $textContactblokColor;
+    text-shadow: 0px 0px 10px $borderColorMax;
+    margin-bottom: 22px;
+}
+
+.supply-main-section__discription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 490px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    background-color: $textContactblokColor;
+    color: $borderColorMax;
+}

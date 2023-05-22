@@ -1,0 +1,12 @@
+section.supply-request-section
+    form(action="https://gubinvs.ru/lean/php/request-form.php", method="POST").form-block
+        h3.form-block__title Остались вопросы или уже готовы к сотрудничеству
+        input(type="text", name="name", placeholder="Ваше имя", required).form-block__input
+        input(type="Email", name="email", placeholder="Ваш e-mail", required).form-block__input
+        input(type="tel", name="tel", placeholder="+7 000 000 00 00", required).form-block__input
+        textarea(name="message", cols="15", rows="3", placeholder="Ваше сообщение ...", required).form-message__textarea
+        button(type="submit").footer__button Отправить сообщение
+        input(type="hidden" name="act" value="order")
+    .request-section__img-block
+        .img-block.request-section__img-block
+            .fon-block.request-section__fon-block

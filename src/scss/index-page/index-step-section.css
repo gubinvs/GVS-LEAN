@@ -1,0 +1,62 @@
+.step-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  padding-bottom: 80px;
+}
+
+.discription-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discription-card {
+  padding-bottom: 40px;
+  width: 320px;
+  height: 480px;
+  border: 2px solid #8E0532;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.discription-card__img {
+  width: 315;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.discription-card__img1 {
+  background-image: url(../../img/step-section/card-content__img4.png);
+}
+
+.discription-card__img2 {
+  background-image: url(../../img/step-section/card-content__img5.png);
+}
+
+.discription-card__img3 {
+  background-image: url(../../img/step-section/card-content__img6.png);
+}
+
+.discription-card__title {
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.discription-card__discr {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}

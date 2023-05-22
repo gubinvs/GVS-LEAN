@@ -1,0 +1,56 @@
+.supply-request-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 510px;
+  margin-right: 60px;
+}
+
+.form-block__title {
+  font-family: "Days One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  color: #8E0532;
+  margin-bottom: 20px;
+}
+
+.form-block__input {
+  margin-bottom: 12px;
+}
+
+.form-message__textarea {
+  margin-bottom: 12px;
+}
+
+.footer__button {
+  height: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #8E0532;
+  color: #FFFFFF;
+}
+
+.request-section__img-block {
+  width: 440px;
+}
+
+.request-section__img-block {
+  height: 540px;
+  background-image: url(../img/supply-page/request-section__img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.request-section__fon-block {
+  height: 605px;
+}

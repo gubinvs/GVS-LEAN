@@ -1,0 +1,46 @@
+//-- сброс стилей
+@import '../variables/normalize.scss';
+
+.index-regulation-section {
+    margin-bottom: 132px;
+}
+
+.title-block_index-regulation-section {
+    justify-content: center;
+}
+
+.discription-block_index-audit-section {
+    justify-content: flex-start;
+    padding-left: 80px;
+}
+
+.index-regulation-section__img {
+    top: 200px;
+    right: 0px;
+}
+
+.content-list__item_regulation {
+    background-image: url(../../img/index-page/check-circle.svg);
+}
+
+
+.border-block_regulation-section {
+    flex-direction: row-reverse;
+    left: 0px;
+    right: initial; // -- сброс свойства путем применения значения по умолчанию, которое null
+    // -- right: inherit; // -- сбрасываю свойство унаследовав его у родителя, так как оно у родителя не определено.
+}
+
+.border-block__black-line_regulation-section {
+    margin-right: 0px;
+}
+
+.border-block__red-line_regulation-section {
+    margin-right: 20px;
+}
+
+.red-line__text_regulation-section {
+    top: 334px;
+    left: -170px;
+    right: initial;
+}

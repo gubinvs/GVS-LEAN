@@ -1,0 +1,51 @@
+//-- сброс стилей
+@import '../variables/normalize.scss';
+
+.index-adaptation-section {
+    padding-top: 100px;
+}
+
+
+.index-adaptation-section__title-block {
+    justify-content: center;
+}
+
+.content__title_adaptation-section {
+    margin-bottom: 36px;
+}
+
+.content-list__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.content-list__item {
+    padding-left: 80px;
+    padding-right: 40px;
+    
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.content-list__item:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.content-list__item1 {
+    background-image: url(../../img/index-page/adap-bc-item__img.svg);
+}
+
+.content-list__item2 {
+    background-image: url(../../img/index-page/adap-bc-item__img2.svg);
+}
+
+.content-list__item3 {
+    background-image: url(../../img/index-page/adap-bc-item__img3.svg);
+}
+
+.red-line__text_adaptation-section {
+    top: 340px;
+    right: -94px;
+}

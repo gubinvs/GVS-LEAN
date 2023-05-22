@@ -1,0 +1,139 @@
+.index-main-section {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 930px;
+  margin-bottom: 40px;
+  background-image: url(../../img/index-page/bg-index-main.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.content-block_index-page-main-section {
+  padding-top: 0px;
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.title-block__line-left {
+  width: 400px;
+  height: 20px;
+  background-color: #8E0532;
+}
+
+.title-block__title {
+  padding-left: 22px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.title-block__line-right {
+  width: 100px;
+  height: 20px;
+  background-color: #8E0532;
+}
+
+.discriptin-block__img {
+  margin-right: 20px;
+}
+
+.block-list {
+  padding: 20px 80px 40px 40px;
+  border-radius: 0px;
+  background-color: #F7F7F7;
+}
+
+.discriptin-block__list {
+  padding-top: 10px;
+  padding-left: 22px;
+}
+
+.block-list__icon {
+  display: none;
+}
+
+.list__title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #8E0532;
+  margin-bottom: 24px;
+}
+
+.list__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-left: 28px;
+  background-image: url(../../img/index-page/tb-list-item__check-img_1024.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  color: #000000;
+}
+
+.list__item:not(:last-of-type) {
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+  .block-list__icon {
+    display: inline;
+  }
+  .block-list {
+    display: flex;
+    align-items: center;
+  }
+  .block-list__icon {
+    width: 115px;
+    height: 115px;
+  }
+  .discriptin-block__list {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  .list__title {
+    font-size: 32px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+  .list__item {
+    font-size: 22px;
+    line-height: 28px;
+    padding-left: 40px;
+    background-image: url(../img/tb-list-item__check-img_800.png);
+  }
+  .list__item:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .block-list__icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .discriptin-block__list {
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+  .list__title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 16px;
+  }
+  .list__item {
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 32px;
+    background-image: url(../img/tb-list-item__check-img_480.png);
+  }
+  .list__item:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}

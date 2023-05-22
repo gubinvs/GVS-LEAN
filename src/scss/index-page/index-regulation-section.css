@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.h1-min {
+  font-size: 0.1px;
+  line-height: 0.1px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.index-regulation-section {
+  margin-bottom: 132px;
+}
+
+.title-block_index-regulation-section {
+  justify-content: center;
+}
+
+.discription-block_index-audit-section {
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+.index-regulation-section__img {
+  top: 200px;
+  right: 0px;
+}
+
+.content-list__item_regulation {
+  background-image: url(../../img/index-page/check-circle.svg);
+}
+
+.border-block_regulation-section {
+  flex-direction: row-reverse;
+  left: 0px;
+  right: initial;
+}
+
+.border-block__black-line_regulation-section {
+  margin-right: 0px;
+}
+
+.border-block__red-line_regulation-section {
+  margin-right: 20px;
+}
+
+.red-line__text_regulation-section {
+  top: 334px;
+  left: -170px;
+  right: initial;
+}

@@ -1,0 +1,22 @@
+//- Подключил шаблон с разметкой страницы
+extends doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Описание страницы в head discription
+    - var contentDiscription = 'Уведомление об удачном отправлении сообщении с сайта';
+    //- Наименование главной страницы
+    - var titleName = 'Ваше сообщение удачно отправлено';
+    //- Массив с путями к файлам со стилями
+    - var stylePath = [];
+
+
+//- Вставил блок с будующим контентом
+block content
+    section.messageok-section
+        .messageok-section__icon-block
+            img(src="img/mail-big-icon.svg", alt="Конверт не запечат, но с вложенным письмом")
+            img(src="img/like-big-icon.svg", alt="Лайк")
+        .supply-title-block 
+            .supply-title-block__border
+            h2.supply-title-block__text Все прошло удачно! <br> Мы уже обрабатываем Ваше сообщение.

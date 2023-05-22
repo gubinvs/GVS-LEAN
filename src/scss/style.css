@@ -1,0 +1,1357 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Days One";
+  src: url("../fonts/DaysOne-Regular.eot");
+  src: local("Days One"), local("DaysOne-Regular"), url("../fonts/DaysOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/DaysOne-Regular.woff2") format("woff2"), url("../fonts/DaysOne-Regular.woff") format("woff"), url("../fonts/DaysOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.h1-min {
+  font-size: 0.1px;
+  line-height: 0.1px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+::placeholder {
+  padding-left: 20px;
+  color: #B3A99B;
+  font-size: 14px;
+}
+
+body {
+  background-color: #F7F7F7;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  color: #000000;
+}
+
+section,
+header,
+footer {
+  max-width: 1920px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1__visually {
+  font-size: 0.1px;
+}
+
+a,
+a:visited {
+  color: #000000;
+}
+
+a:hover {
+  color: #000000;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+
+.messageok-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+}
+
+.messageok-section__icon-block {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.content-block {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.discriptin-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+}
+.heder-section {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.top-block-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  margin-bottom: 8px;
+}
+
+.phone_top {
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  color: #8E0532;
+}
+
+.index-main-section {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 930px;
+  margin-bottom: 40px;
+  background-image: url(../../img/index-page/bg-index-main.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.content-block_index-page-main-section {
+  padding-top: 0px;
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.title-block__line-left {
+  width: 400px;
+  height: 20px;
+  background-color: #8E0532;
+}
+
+.title-block__title {
+  padding-left: 22px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.title-block__line-right {
+  width: 100px;
+  height: 20px;
+  background-color: #8E0532;
+}
+
+.discriptin-block__img {
+  margin-right: 20px;
+}
+
+.block-list {
+  padding: 20px 80px 40px 40px;
+  border-radius: 0px;
+  background-color: #F7F7F7;
+}
+
+.discriptin-block__list {
+  padding-top: 10px;
+  padding-left: 22px;
+}
+
+.block-list__icon {
+  display: none;
+}
+
+.list__title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #8E0532;
+  margin-bottom: 24px;
+}
+
+.list__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-left: 28px;
+  background-image: url(../../img/index-page/tb-list-item__check-img_1024.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  color: #000000;
+}
+
+.list__item:not(:last-of-type) {
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+  .block-list__icon {
+    display: inline;
+  }
+  .block-list {
+    display: flex;
+    align-items: center;
+  }
+  .block-list__icon {
+    width: 115px;
+    height: 115px;
+  }
+  .discriptin-block__list {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  .list__title {
+    font-size: 32px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+  .list__item {
+    font-size: 22px;
+    line-height: 28px;
+    padding-left: 40px;
+    background-image: url(../img/tb-list-item__check-img_800.png);
+  }
+  .list__item:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .block-list__icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .discriptin-block__list {
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+  .list__title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 16px;
+  }
+  .list__item {
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 32px;
+    background-image: url(../img/tb-list-item__check-img_480.png);
+  }
+  .list__item:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+.step-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  padding-bottom: 80px;
+}
+
+.discription-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discription-card {
+  padding-bottom: 40px;
+  width: 320px;
+  height: 480px;
+  border: 2px solid #8E0532;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.discription-card__img {
+  width: 315;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.discription-card__img1 {
+  background-image: url(../../img/step-section/card-content__img4.png);
+}
+
+.discription-card__img2 {
+  background-image: url(../../img/step-section/card-content__img5.png);
+}
+
+.discription-card__img3 {
+  background-image: url(../../img/step-section/card-content__img6.png);
+}
+
+.discription-card__title {
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.discription-card__discr {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.index-audit-section {
+  position: relative;
+  max-width: 1280px;
+  margin-bottom: 80px;
+}
+
+.index-audit-section__img {
+  position: absolute;
+  top: 83px;
+}
+
+.border-block {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+}
+
+.border-block__black-line {
+  width: 20px;
+  height: 700px;
+  margin-right: 20px;
+  background-color: #000000;
+}
+
+.border-block__red-line {
+  width: 100px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8E0532;
+}
+
+.red-line__text {
+  position: absolute;
+  top: 350px;
+  right: -167px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 40px;
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+}
+
+.index-audit-section__discription-block {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.discription-block__icon-list {
+  display: flex;
+  padding-right: 40px;
+  margin-bottom: 120px;
+}
+
+.discription-block__icon-item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.discription-block__content {
+  width: 700px;
+}
+
+.content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.content__discr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.h1-min {
+  font-size: 0.1px;
+  line-height: 0.1px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.index-regulation-section {
+  margin-bottom: 132px;
+}
+
+.title-block_index-regulation-section {
+  justify-content: center;
+}
+
+.discription-block_index-audit-section {
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+.index-regulation-section__img {
+  top: 200px;
+  right: 0px;
+}
+
+.content-list__item_regulation {
+  background-image: url(../../img/index-page/check-circle.svg);
+}
+
+.border-block_regulation-section {
+  flex-direction: row-reverse;
+  left: 0px;
+  right: initial;
+}
+
+.border-block__black-line_regulation-section {
+  margin-right: 0px;
+}
+
+.border-block__red-line_regulation-section {
+  margin-right: 20px;
+}
+
+.red-line__text_regulation-section {
+  top: 334px;
+  left: -170px;
+  right: initial;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.h1-min {
+  font-size: 0.1px;
+  line-height: 0.1px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.index-adaptation-section {
+  padding-top: 100px;
+}
+
+.index-adaptation-section__title-block {
+  justify-content: center;
+}
+
+.content__title_adaptation-section {
+  margin-bottom: 36px;
+}
+
+.content-list__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.content-list__item {
+  padding-left: 80px;
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.content-list__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.content-list__item1 {
+  background-image: url(../../img/index-page/adap-bc-item__img.svg);
+}
+
+.content-list__item2 {
+  background-image: url(../../img/index-page/adap-bc-item__img2.svg);
+}
+
+.content-list__item3 {
+  background-image: url(../../img/index-page/adap-bc-item__img3.svg);
+}
+
+.red-line__text_adaptation-section {
+  top: 340px;
+  right: -94px;
+}
+
+.index-task-section {
+  position: relative;
+  max-width: 1280px;
+  padding-top: 80px;
+  margin-bottom: 120px;
+}
+
+.title-block__task-section {
+  justify-content: flex-start;
+}
+
+.index-task-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.index-task-card {
+  display: flex;
+  width: 490px;
+}
+
+.index-task-card:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.index-task-card:nth-child(-n+2) {
+  margin-bottom: 40px;
+}
+
+.index-task-card__icon {
+  margin-right: 20px;
+}
+
+.index-task-card__content {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.case-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.case-block__card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.case-block__card:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.case-block-card__action,
+.case-block-card__result {
+  width: 400px;
+}
+
+.action__title,
+.result__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+.action__discr,
+.result__discr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.supply-footer {
+  display: flex;
+  background-color: #8E0532;
+}
+
+.supply-footer__continer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px 60px 0px;
+}
+
+.footer-section__left-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+}
+
+.form-tel-title {
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 12px;
+  color: #FFFFFF;
+}
+
+.form-tel-footer {
+  display: flex;
+  width: 490px;
+  height: 50px;
+  margin-bottom: 22px;
+}
+
+.form-tel-footer__input {
+  width: 405px;
+  height: 50px;
+  border: none;
+  margin-right: 20px;
+}
+
+.form-tel-footer__botton {
+  display: block;
+  width: 65px;
+  height: 50px;
+  background-color: #FFFFFF;
+  background-image: url(../img/supply-page/icons_ked_bell.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-tel-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.footer-contact__item,
+.footer-contact__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.footer-contact__title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-contact__item {
+  margin-bottom: 12px;
+}
+
+.footer-contact__item:nth-last-child(2) {
+  margin-bottom: 40px;
+}
+
+.social-block-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.social-block-list__icon:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.pp-page {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.supply-title-block {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.supply-title-block__border {
+  width: 20px;
+  height: 120px;
+  background-color: #8E0532;
+  margin-right: 64px;
+}
+
+.supply-title-block__text {
+  width: 488px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 51px;
+  color: #8E0532;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6 {
+  display: none;
+}
+
+.supply-main-section__main-img {
+  width: 100%;
+  height: 720px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #8E0532;
+  background-image: url(../img/supply-page/main-img-section_1440.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.supply-main-section__title {
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 122px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 10px #8E0532;
+  margin-bottom: 22px;
+}
+
+.supply-main-section__discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 490px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  background-color: #FFFFFF;
+  color: #8E0532;
+}
+
+.supply-outsourcing-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.supply-outsourcing-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-content {
+  width: 659px;
+}
+
+.supply-outsourcing__discr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.supply-outsourcing__discr:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.outsourcing-discr__list {
+  padding-left: 48px;
+}
+
+.outsourcing-discr__item {
+  padding-left: 40px;
+  background-image: url(../img/supply-page/check-circle.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.outsourcing-discr__item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.supply-img-block {
+  padding-top: 30px;
+}
+
+.img-block {
+  position: relative;
+  width: 460px;
+  height: 460px;
+  background-image: url(../img/supply-page/supply-block-img_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fon-block {
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  width: 235px;
+  height: 520px;
+  background-color: #8E0532;
+  z-index: -1;
+}
+
+.min-img-block {
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  width: 134px;
+  height: 134px;
+  border: 8px solid #8E0532;
+  background-image: url(../img/supply-page/supply-block-img_min1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.supply-blocktop-img {
+  display: flex;
+  justify-content: center;
+  background-color: #8E0532;
+  margin-bottom: 40px;
+}
+
+.supply-blocktop-img__big-img {
+  margin-right: 20px;
+}
+
+.supply-task-section {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+}
+
+.background-block {
+  width: 630px;
+  height: 600px;
+  padding: 50px 140px 50px 65px;
+  background-color: #8E0532;
+}
+
+.background-block__content {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.background-block__content:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.supply-accounting-section {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 140px;
+}
+
+.supply-accounting-section__block-img {
+  position: relative;
+  width: 492px;
+  margin-right: 120px;
+}
+
+.sas-block-img__border {
+  width: 323px;
+  height: 297px;
+  background-color: #8E0532;
+}
+
+.sas-block-img__img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.supply-title-block__accounting-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.supply-title-block__text_accounting-section {
+  margin-bottom: 18px;
+}
+
+.supply-accounting-section__title-border {
+  width: 190px;
+  height: 10px;
+}
+
+.supply-outsourcing__discr_accounting-section {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.accounting-discr__item {
+  margin-bottom: 40px;
+}
+
+.supply-question-section {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1280px;
+  margin-bottom: 100px;
+}
+
+.supply-title-block__question-section {
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  top: 180px;
+  left: -190px;
+  transform: rotate(-90deg);
+}
+
+.supply-title-block__border_question-section {
+  width: 157px;
+  height: 20px;
+}
+
+.supply-title-block__text_question-section {
+  width: auto;
+  margin-right: 22px;
+}
+
+.question-list__item {
+  display: flex;
+}
+
+.question-list__item:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+
+.question-list__item_number {
+  width: 65px;
+  height: 65px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #8E0532;
+  margin-right: 12px;
+}
+
+.question-list__item_question {
+  display: flex;
+  align-items: center;
+  width: 660px;
+  height: 65px;
+  padding-left: 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  border: 1px solid #8E0532;
+  background-image: url(../img/supply-page/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 10px;
+  cursor: pointer;
+}
+
+.question-list__item_answer {
+  width: 660px;
+  padding-left: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.supply-request-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 510px;
+  margin-right: 60px;
+}
+
+.form-block__title {
+  font-family: "Days One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  color: #8E0532;
+  margin-bottom: 20px;
+}
+
+.form-block__input {
+  margin-bottom: 12px;
+}
+
+.form-message__textarea {
+  margin-bottom: 12px;
+}
+
+.footer__button {
+  height: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #8E0532;
+  color: #FFFFFF;
+}
+
+.request-section__img-block {
+  width: 440px;
+}
+
+.request-section__img-block {
+  height: 540px;
+  background-image: url(../img/supply-page/request-section__img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.request-section__fon-block {
+  height: 605px;
+}

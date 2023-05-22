@@ -1,0 +1,25 @@
+footer.supply-footer 
+    .container.supply-footer__continer
+        .footer-section__left-block 
+            h3.form-tel-title Закажите звонок:
+            form(action="https://gubinvs.ru/lean/php/call-back.php", method="POST").form-tel-footer 
+                input(type="tel", name="tel", placeholder="+7 922 222 00 00").form-tel-footer__input
+                button(type="submit").form-tel-footer__botton 
+                input(type="hidden" name="act" value="order")
+            .form-tel-text Мы перезвоним Вам и обсудим все интересующие вопросы 
+        .footer-section__right-block 
+            .footer-contact-list 
+                .footer-contact__title Контакты:
+                .footer-contact__item Тел: +7 (812) 921-59-71 СПб
+                .footer-contact__item Тел: +7 (342) 204-00-43 Пермь
+                .social-block-list
+                    a(href="https://t.me/gubinvs").social-block-list__icon
+                        img(src="../../img/supply-page/icons_telegram.svg", alt="Иконка телеграмм")
+                    a(href="https://vk.com/gubinvs").social-block-list__icon 
+                        img(src="../../img/supply-page/icons_vkontakte.svg", alt="Иконка вконтакте")
+                    a(href="mailto:gubinvs@gmail.com").social-block-list__icon 
+                        img(src="../../img/supply-page/icons_mail.svg", alt="Иконка электронной почты")
+                    a(href="https://www.instagram.com/gubinvs/").social-block-list__icon 
+                        img(src="../../img/supply-page/icons_instagram.svg", alt="Иконка инстаграмм")
+                a(href="https://gubinvs.ru/pp-page.html") 
+                    .pp-page Политика в отношении<br> обработки персональных данных

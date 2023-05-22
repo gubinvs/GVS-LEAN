@@ -1,0 +1,71 @@
+.supply-question-section {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1280px;
+  margin-bottom: 100px;
+}
+
+.supply-title-block__question-section {
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  top: 180px;
+  left: -190px;
+  transform: rotate(-90deg);
+}
+
+.supply-title-block__border_question-section {
+  width: 157px;
+  height: 20px;
+}
+
+.supply-title-block__text_question-section {
+  width: auto;
+  margin-right: 22px;
+}
+
+.question-list__item {
+  display: flex;
+}
+
+.question-list__item:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+
+.question-list__item_number {
+  width: 65px;
+  height: 65px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #8E0532;
+  margin-right: 12px;
+}
+
+.question-list__item_question {
+  display: flex;
+  align-items: center;
+  width: 660px;
+  height: 65px;
+  padding-left: 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  border: 1px solid #8E0532;
+  background-image: url(../img/supply-page/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 10px;
+  cursor: pointer;
+}
+
+.question-list__item_answer {
+  width: 660px;
+  padding-left: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}

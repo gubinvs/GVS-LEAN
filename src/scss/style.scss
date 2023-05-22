@@ -1,0 +1,189 @@
+//-- Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Days One';
+    src: url('../fonts/DaysOne-Regular.eot');
+    src: local('Days One'), local('DaysOne-Regular'),
+        url('../fonts/DaysOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DaysOne-Regular.woff2') format('woff2'),
+        url('../fonts/DaysOne-Regular.woff') format('woff'),
+        url('../fonts/DaysOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//-- сброс стилей
+@import 'variables/normalize.scss';
+
+//-- переменные
+@import 'variables/variables.scss';
+
+
+::placeholder {
+    padding-left: 20px;
+    color: $borderColor;
+    font-size: 14px;
+}
+
+body {
+    background-color: $bgColorBady;
+    font-family: $ffTextBady;
+    font-style: normal;
+    color: $textColor;
+}
+
+section,
+header,
+footer {
+    max-width: 1920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1__visually {
+    font-size: 0.1px;
+}
+
+a,
+a:visited {
+    color: $textColor;
+}
+
+a:hover {
+    color: $textColor;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+
+// -- Стили для страницы с информацией о удачной отправке сообщения
+.messageok-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+.messageok-section__icon-block {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.content-block {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.discriptin-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {    
+    .container {
+        width: 768px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0px 40px 0px 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+
+// -- Index page style ------------------------------------------------
+@import 'heder.scss';
+@import 'index-page/index-main-section.scss';
+@import 'index-page/index-step-section.scss';
+@import 'index-page/index-audit-section.scss';
+@import 'index-page/index-regulation-section.scss';
+@import 'index-page/index-adaptation-section.scss';
+@import 'index-page/index-task-section.scss';
+@import 'footer.scss';
+
+
+
+//-- Supply page style -------------------------------------------------------
+.supply-title-block {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.supply-title-block__border {
+    width: 20px;
+    height: 120px;
+    background-color: $borderColorMax;
+    margin-right: 64px;
+}
+
+.supply-title-block__text {
+    width: 488px;
+    font-family: $ffTitle;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+    color: $borderColorMax;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6 {
+    display: none;
+}
+
+@import 'supply-page/supply-main-section.scss';
+@import 'supply-page/supply-outsourcing-section.scss';
+@import 'supply-page/supply-task-section.scss';
+@import 'supply-page/supply-accounting-section.scss';
+@import 'supply-page/supply-questions-section.scss';
+@import 'supply-page/supply-request-section.scss';
+

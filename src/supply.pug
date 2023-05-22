@@ -1,0 +1,26 @@
+//- Подключил шаблон с разметкой страницы
+extends doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Описание страницы в head discription
+    - var contentDiscription = 'Берем на себя обязанность по обеспечению потребности в материалах и комплектующих, анализируем цены на рынке, формируем и отправляем заявки на закупку поставщикам. Контролируем сроки поставок и ведем учет движения материалов.';
+    //- Наименование главной страницы
+    - var titleName = 'Агентство закупочных процедур';
+    //- Массив с путями к файлам со стилями
+    - var stylePath = [];
+
+
+//- Вставил блок с будующим контентом
+block content
+    main
+        h1(class="visually-hidden h1-visually", style="visibility: hidden;").h1__visually Аутсорсинг снабжения и закупочных процедур
+        include html/header.pug
+        include html/supply-page/supply-main-section.pug 
+        include html/supply-page/supply-outsourcing-section.pug
+        include html/supply-page/supply-task-section.pug
+        include html/supply-page/supply-accounting-section.pug
+        include html/supply-page/supply-questions-section.pug 
+        include html/supply-page/supply-request-section.pug 
+        include html/footer.pug 
+        script(src="js/app.js")

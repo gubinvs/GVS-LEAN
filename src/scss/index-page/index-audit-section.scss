@@ -1,0 +1,83 @@
+//-- Подключение переменных
+@import '../variables/variables.scss';
+
+.index-audit-section {
+    position: relative;
+    max-width: 1280px;
+    margin-bottom: 80px;
+}
+
+.index-audit-section__img {
+    position: absolute;
+    top: 83px;
+}
+
+.border-block {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+} 
+
+.border-block__black-line {
+    width: 20px;
+    height: 700px;
+    margin-right: 20px;
+    background-color: $textColor;
+} 
+
+.border-block__red-line {
+    width: 100px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $borderColorMax;    
+}
+
+.red-line__text {
+    position: absolute;
+    top: 350px;
+    right: -167px;
+    font-family: $ffTitle;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 40px;
+    color: $textContactblokColor;
+    transform: rotate(-90deg);
+}
+
+.index-audit-section__discription-block {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.discription-block__icon-list {
+    display: flex;
+    padding-right: 40px;
+    margin-bottom: 120px;
+}
+
+.discription-block__icon-item:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+ .discription-block__content {
+    width: 700px;
+ } 
+ 
+.content__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+ 
+.content__discr {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 35px;
+}

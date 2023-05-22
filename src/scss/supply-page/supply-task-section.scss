@@ -1,0 +1,42 @@
+//-- переменные
+@import '../variables/variables.scss';
+
+.supply-blocktop-img {
+    display: flex;
+    justify-content: center;
+    background-color: $borderColorMax;
+    margin-bottom: 40px;
+}
+
+.supply-blocktop-img__big-img {
+    margin-right: 20px;
+}
+
+.supply-task-section {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+}
+
+.background-block {
+    width: 630px;
+    height: 600px;
+    padding: 50px 140px 50px 65px;
+    background-color: $borderColorMax;
+}
+
+.background-block__content {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: $textContactblokColor;   
+}
+
+.background-block__content:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+

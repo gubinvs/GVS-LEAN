@@ -1,0 +1,84 @@
+//-- переменные
+@import '../variables/variables.scss';
+
+.index-task-section {
+    position: relative;
+    max-width: 1280px;
+    padding-top: 80px;
+    margin-bottom: 120px;
+}
+
+.title-block__task-section {
+    justify-content: flex-start;
+}
+
+.index-task-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.index-task-card {
+    display: flex;
+    width: 490px;
+}
+
+//-- все нечентые элементы
+.index-task-card:nth-child(odd) {
+    margin-right: 20px;
+}
+
+//-- только первые два элемента
+.index-task-card:nth-child(-n+2) {
+    margin-bottom: 40px;
+}
+
+.index-task-card__icon {
+    margin-right: 20px;
+}
+
+.index-task-card__content {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.case-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.case-block__card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.case-block__card:not(:last-of-type) {
+    margin-bottom: 40px;
+} 
+
+.case-block-card__action,
+.case-block-card__result {
+    width: 400px;
+}
+
+
+.action__title,
+.result__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+
+.action__discr,
+.result__discr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+}
