@@ -23,3 +23,11 @@
     line-height: 41px;
     color: $borderColorMax;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .top-block-contact {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

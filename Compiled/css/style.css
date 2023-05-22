@@ -240,6 +240,12 @@ button {
   color: #8E0532;
 }
 
+@media only screen and (max-width: 768px) {
+  .top-block-contact {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 .index-main-section {
   display: flex;
   justify-content: space-between;
