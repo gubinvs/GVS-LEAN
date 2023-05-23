@@ -69,7 +69,7 @@
     line-height: 20px;
   }
 }
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 480px) {
   .supply-main-section__main-img {
     height: 240px;
     padding-top: 70px;
