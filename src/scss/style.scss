@@ -78,37 +78,13 @@ button {
     cursor: pointer;
 }
 
-// -- Стили для страницы с информацией о удачной отправке сообщения
-.messageok-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15vh;
-}
-
-.messageok-section__icon-block {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.content-block {
-    padding-top: 50px;
-    width: 100%;
-}
-
-.discriptin-block {
-    display: flex;
-    justify-content: space-between;
-}
-
 @media only screen and (max-width: 1280px) {
     .container {
         width: 1000px;
     }
 }
 
-@media only screen and (max-width: 1024px) {    
+@media only screen and (max-width: 1024px) {
     .container {
         width: 768px;
     }
@@ -135,54 +111,7 @@ button {
     }
 }
 
-// -- Index page style ------------------------------------------------
-@import 'heder.scss';
-@import 'index-page/index-main-section.scss';
-@import 'index-page/index-step-section.scss';
-@import 'index-page/index-audit-section.scss';
-@import 'index-page/index-regulation-section.scss';
-@import 'index-page/index-adaptation-section.scss';
-@import 'index-page/index-task-section.scss';
-@import 'footer.scss';
+@import 'lean-page-style.scss';
+@import 'supply-page-style.scss';
 
-
-//-- Supply page style -------------------------------------------------------
-.supply-title-block {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.supply-title-block__border {
-    width: 20px;
-    height: 120px;
-    background-color: $borderColorMax;
-    margin-right: 64px;
-}
-
-.supply-title-block__text {
-    width: 488px;
-    font-family: $ffTitle;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 51px;
-    color: $borderColorMax;
-}
-
-
-.question1,
-.question2,
-.question3,
-.question4,
-.question5,
-.question6 {
-    display: none;
-}
-
-@import 'supply-page/supply-main-section.scss';
-@import 'supply-page/supply-outsourcing-section.scss';
-@import 'supply-page/supply-task-section.scss';
-@import 'supply-page/supply-accounting-section.scss';
-@import 'supply-page/supply-questions-section.scss';
-@import 'supply-page/supply-request-section.scss';
-
+@import 'messageok.scss';

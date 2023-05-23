@@ -1,7 +1,6 @@
 .supply-outsourcing-section {
   display: flex;
   justify-content: space-between;
-  max-width: 1280px;
   padding-top: 80px;
   margin-bottom: 80px;
 }
@@ -12,7 +11,7 @@
 }
 
 .block-content {
-  width: 659px;
+  width: 510px;
 }
 
 .supply-outsourcing__discr {
@@ -47,7 +46,7 @@
 
 .img-block {
   position: relative;
-  width: 460px;
+  width: 405px;
   height: 460px;
   background-image: url(../img/supply-page/supply-block-img_1280.jpg);
   background-repeat: no-repeat;
@@ -74,4 +73,55 @@
   background-image: url(../img/supply-page/supply-block-img_min1280.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .block-content {
+    width: 374px;
+  }
+  .supply-outsourcing__discr {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .img-block {
+    width: 373px;
+    height: 460px;
+  }
+  .fon-block {
+    top: -30px;
+    left: 55px;
+  }
+  .min-img-block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-outsourcing-section {
+    flex-direction: column;
+  }
+  .block-content {
+    width: 340px;
+    margin-right: 8px;
+  }
+  .supply-outsourcing__discr {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .img-block {
+    width: 340px;
+    height: 460px;
+  }
+  .fon-block {
+    top: -30px;
+    left: 55px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .supply-outsourcing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .supply-img-block {
+    display: none;
+  }
 }

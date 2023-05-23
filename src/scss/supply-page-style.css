@@ -1,0 +1,550 @@
+.supply-title-block {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.supply-title-block__border {
+  width: 20px;
+  height: 120px;
+  background-color: #8E0532;
+  margin-right: 64px;
+}
+
+.supply-title-block__text {
+  width: 488px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 51px;
+  color: #8E0532;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6,
+.supply-title-block_mobile,
+.supply-title-block__border_mobile,
+.supply-title-block__text_mobile {
+  display: none;
+}
+
+.supply-main-section__main-img {
+  width: 100%;
+  height: 720px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #8E0532;
+  background-image: url(../img/supply-page/main-img-section_1440.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.supply-main-section__title {
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 122px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 10px #8E0532;
+  margin-bottom: 22px;
+}
+
+.supply-main-section__discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 490px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  background-color: #FFFFFF;
+  color: #8E0532;
+}
+
+@media only screen and (max-width: 1280px) {
+  .supply-main-section__main-img {
+    background-image: url(../img/supply-page/main-img-section_1280.jpg);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .supply-main-section__main-img {
+    height: 576px;
+    padding-top: 200px;
+    background-image: url(../img/supply-page/main-img-section_1024.jpg);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-main-section__main-img {
+    height: 432px;
+    padding-top: 120px;
+    background-image: url(../img/supply-page/main-img-section_768.jpg);
+  }
+  .supply-main-section__title {
+    font-size: 64px;
+    line-height: 81px;
+    margin-bottom: 28px;
+  }
+  .supply-main-section__discription {
+    width: 320px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .supply-main-section__main-img {
+    height: 240px;
+    padding-top: 70px;
+    background-image: url(../img/supply-page/main-img-section_480.jpg);
+  }
+  .supply-main-section__title {
+    font-size: 56px;
+    line-height: 71px;
+    margin-bottom: 12px;
+  }
+  .supply-main-section__discription {
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .supply-main-section__main-img {
+    display: flex;
+    justify-content: flex-start;
+    height: 200px;
+    padding-top: 50px;
+    background-image: url(../img/supply-page/main-img-section_360.jpg);
+  }
+  .supply-main-section__title {
+    font-size: 48px;
+    line-height: 61px;
+    margin-bottom: 8px;
+  }
+  .supply-main-section__discription {
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+.supply-outsourcing-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.supply-outsourcing-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-content {
+  width: 510px;
+}
+
+.supply-outsourcing__discr {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.supply-outsourcing__discr:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.outsourcing-discr__list {
+  padding-left: 48px;
+}
+
+.outsourcing-discr__item {
+  padding-left: 40px;
+  background-image: url(../img/supply-page/check-circle.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.outsourcing-discr__item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.supply-img-block {
+  padding-top: 30px;
+}
+
+.img-block {
+  position: relative;
+  width: 405px;
+  height: 460px;
+  background-image: url(../img/supply-page/supply-block-img_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fon-block {
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  width: 235px;
+  height: 520px;
+  background-color: #8E0532;
+  z-index: -1;
+}
+
+.min-img-block {
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  width: 134px;
+  height: 134px;
+  border: 8px solid #8E0532;
+  background-image: url(../img/supply-page/supply-block-img_min1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .block-content {
+    width: 374px;
+  }
+  .supply-outsourcing__discr {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .img-block {
+    width: 373px;
+    height: 460px;
+  }
+  .fon-block {
+    top: -30px;
+    left: 55px;
+  }
+  .min-img-block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-outsourcing-section {
+    flex-direction: column;
+  }
+  .block-content {
+    width: 340px;
+    margin-right: 8px;
+  }
+  .supply-outsourcing__discr {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .img-block {
+    width: 340px;
+    height: 460px;
+  }
+  .fon-block {
+    top: -30px;
+    left: 55px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .supply-outsourcing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .supply-img-block {
+    display: none;
+  }
+}
+.supply-blocktop-img {
+  display: flex;
+  justify-content: center;
+  background-color: #8E0532;
+  margin-bottom: 40px;
+}
+
+.supply-blocktop-img__big-img {
+  margin-right: 20px;
+}
+
+.supply-task-section {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+}
+
+.background-block {
+  width: 630px;
+  height: 600px;
+  padding: 50px 140px 50px 65px;
+  background-color: #8E0532;
+}
+
+.background-block__content {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.background-block__content:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.supply-accounting-section {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 140px;
+}
+
+.supply-accounting-section__block-img {
+  position: relative;
+  width: 492px;
+  margin-right: 120px;
+}
+
+.sas-block-img__border {
+  width: 323px;
+  height: 297px;
+  background-color: #8E0532;
+}
+
+.sas-block-img__img {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.supply-title-block__accounting-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.supply-title-block__text_accounting-section {
+  margin-bottom: 18px;
+}
+
+.supply-accounting-section__title-border {
+  width: 190px;
+  height: 10px;
+}
+
+.supply-outsourcing__discr_accounting-section {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.accounting-discr__item {
+  margin-bottom: 40px;
+}
+
+.supply-question-section {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1280px;
+  margin-bottom: 100px;
+}
+
+.supply-title-block__question-section {
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  top: 180px;
+  left: -190px;
+  transform: rotate(-90deg);
+}
+
+.supply-title-block__border_question-section {
+  width: 157px;
+  height: 20px;
+}
+
+.supply-title-block__text_question-section {
+  width: auto;
+  margin-right: 22px;
+}
+
+.question-list__item {
+  display: flex;
+}
+
+.question-list__item:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+
+.question-list__item_number {
+  width: 65px;
+  height: 65px;
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #8E0532;
+  margin-right: 12px;
+}
+
+.question-list__item_question {
+  display: flex;
+  align-items: center;
+  width: 660px;
+  height: 65px;
+  padding-left: 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  border: 1px solid #8E0532;
+  background-image: url(../img/supply-page/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 10px;
+  cursor: pointer;
+}
+
+.question-list__item_answer {
+  width: 660px;
+  padding-left: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.supply-request-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 510px;
+  margin-right: 60px;
+}
+
+.form-block__title {
+  font-family: "Days One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+  color: #8E0532;
+  margin-bottom: 20px;
+}
+
+.form-block__input {
+  margin-bottom: 12px;
+}
+
+.form-message__textarea {
+  margin-bottom: 12px;
+}
+
+.footer__button {
+  height: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  background-color: #8E0532;
+  color: #FFFFFF;
+}
+
+.request-section__img-block {
+  width: 440px;
+}
+
+.request-section__img-block {
+  height: 540px;
+  background-image: url(../img/supply-page/request-section__img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.request-section__fon-block {
+  height: 605px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .supply-title-block {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .supply-title-block__border {
+    width: 120px;
+    height: 20px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .supply-title-block__text {
+    width: 376px;
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-title-block,
+  .supply-title-block__border,
+  .supply-title-block__text {
+    display: none;
+  }
+  .supply-title-block_mobile {
+    display: inherit;
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .supply-title-block__border_mobile {
+    display: inherit;
+    width: 20px;
+    height: 120px;
+    background-color: #8E0532;
+    margin-right: 30px;
+  }
+  .supply-title-block__text_mobile {
+    display: inherit;
+    width: 488px;
+    font-family: "Days One", "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+    color: #8E0532;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .supply-title-block_mobile {
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .supply-title-block__border_mobile {
+    width: 20px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  .supply-title-block__text_mobile {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

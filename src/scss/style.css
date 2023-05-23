@@ -166,29 +166,6 @@ button {
   cursor: pointer;
 }
 
-.messageok-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 15vh;
-}
-
-.messageok-section__icon-block {
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.content-block {
-  padding-top: 50px;
-  width: 100%;
-}
-
-.discriptin-block {
-  display: flex;
-  justify-content: space-between;
-}
-
 @media only screen and (max-width: 1280px) {
   .container {
     width: 1000px;
@@ -1021,7 +998,10 @@ select {
 .question3,
 .question4,
 .question5,
-.question6 {
+.question6,
+.supply-title-block_mobile,
+.supply-title-block__border_mobile,
+.supply-title-block__text_mobile {
   display: none;
 }
 
@@ -1137,7 +1117,6 @@ select {
 .supply-outsourcing-section {
   display: flex;
   justify-content: space-between;
-  max-width: 1280px;
   padding-top: 80px;
   margin-bottom: 80px;
 }
@@ -1148,7 +1127,7 @@ select {
 }
 
 .block-content {
-  width: 659px;
+  width: 510px;
 }
 
 .supply-outsourcing__discr {
@@ -1183,7 +1162,7 @@ select {
 
 .img-block {
   position: relative;
-  width: 460px;
+  width: 405px;
   height: 460px;
   background-image: url(../img/supply-page/supply-block-img_1280.jpg);
   background-repeat: no-repeat;
@@ -1212,6 +1191,56 @@ select {
   background-position: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  .block-content {
+    width: 374px;
+  }
+  .supply-outsourcing__discr {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .img-block {
+    width: 373px;
+    height: 460px;
+  }
+  .fon-block {
+    top: -30px;
+    left: 55px;
+  }
+  .min-img-block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-outsourcing-section {
+    flex-direction: column;
+  }
+  .block-content {
+    width: 340px;
+    margin-right: 8px;
+  }
+  .supply-outsourcing__discr {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .img-block {
+    width: 340px;
+    height: 460px;
+  }
+  .fon-block {
+    top: -30px;
+    left: 55px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .supply-outsourcing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .supply-img-block {
+    display: none;
+  }
+}
 .supply-blocktop-img {
   display: flex;
   justify-content: center;
@@ -1428,4 +1457,89 @@ select {
 
 .request-section__fon-block {
   height: 605px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .supply-title-block {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .supply-title-block__border {
+    width: 120px;
+    height: 20px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .supply-title-block__text {
+    width: 376px;
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-title-block,
+  .supply-title-block__border,
+  .supply-title-block__text {
+    display: none;
+  }
+  .supply-title-block_mobile {
+    display: inherit;
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .supply-title-block__border_mobile {
+    display: inherit;
+    width: 20px;
+    height: 120px;
+    background-color: #8E0532;
+    margin-right: 30px;
+  }
+  .supply-title-block__text_mobile {
+    display: inherit;
+    width: 488px;
+    font-family: "Days One", "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+    color: #8E0532;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .supply-title-block_mobile {
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .supply-title-block__border_mobile {
+    width: 20px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  .supply-title-block__text_mobile {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.messageok-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+}
+
+.messageok-section__icon-block {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.content-block {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.discriptin-block {
+  display: flex;
+  justify-content: space-between;
 }

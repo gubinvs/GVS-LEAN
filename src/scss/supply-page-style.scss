@@ -1,0 +1,120 @@
+//-- переменные
+@import 'variables/variables.scss';
+
+//-- Supply page style -------------
+.supply-title-block {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.supply-title-block__border {
+    width: 20px;
+    height: 120px;
+    background-color: $borderColorMax;
+    margin-right: 64px;
+}
+
+.supply-title-block__text {
+    width: 488px;
+    font-family: $ffTitle;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+    color: $borderColorMax;
+}
+
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6,
+.supply-title-block_mobile,
+.supply-title-block__border_mobile,
+.supply-title-block__text_mobile {
+    display: none;
+}
+
+
+@import 'supply-page/supply-main-section.scss';
+@import 'supply-page/supply-outsourcing-section.scss';
+@import 'supply-page/supply-task-section.scss';
+@import 'supply-page/supply-accounting-section.scss';
+@import 'supply-page/supply-questions-section.scss';
+@import 'supply-page/supply-request-section.scss';
+
+
+@media only screen and (max-width: 1024px) {
+    .supply-title-block {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .supply-title-block__border {
+        width: 120px;
+        height: 20px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .supply-title-block__text {
+        width: 376px;
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .supply-title-block,
+    .supply-title-block__border,
+    .supply-title-block__text {
+        display: none;
+    }
+
+    .supply-title-block_mobile {
+        display: inherit;
+        display: flex;
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .supply-title-block__border_mobile {
+        display: inherit;
+        width: 20px;
+        height: 120px;
+        background-color: $borderColorMax;
+        margin-right: 30px;
+    }
+
+    .supply-title-block__text_mobile {
+        display: inherit;
+        width: 488px;
+        font-family: $ffTitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 51px;
+        color: $borderColorMax;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .supply-title-block_mobile {
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .supply-title-block__border_mobile {
+        width: 20px;
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    .supply-title-block__text_mobile {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+

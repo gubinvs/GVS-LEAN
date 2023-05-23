@@ -1,0 +1,26 @@
+//-- переменные
+@import 'variables/variables.scss';
+
+// -- Стили для страницы с информацией о удачной отправке сообщения
+.messageok-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+.messageok-section__icon-block {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.content-block {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.discriptin-block {
+    display: flex;
+    justify-content: space-between;
+}

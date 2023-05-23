@@ -1,0 +1,13 @@
+//-- переменные
+@import 'variables/variables.scss';
+
+
+// -- lean page style ------------------------------------------------
+@import 'heder.scss';
+@import 'index-page/index-main-section.scss';
+@import 'index-page/index-step-section.scss';
+@import 'index-page/index-audit-section.scss';
+@import 'index-page/index-regulation-section.scss';
+@import 'index-page/index-adaptation-section.scss';
+@import 'index-page/index-task-section.scss';
+@import 'footer.scss';
