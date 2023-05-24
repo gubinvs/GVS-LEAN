@@ -40,6 +40,14 @@
     margin-bottom: 12px;
 }
 
+@media only screen and (max-width: 1280px) {    
+    .background-block {
+        width: 100%;
+        height: 100%;
+        padding: 50px 20px 50px 20px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .supply-task-section {
         flex-direction: column;
@@ -48,8 +56,15 @@
 
     .supply-title-block_task {
         width: 100%;
+    }    
+    
+    .background-block {
+        width: 100%;
+        height: 100%;
+        padding: 50px 20px 50px 20px;
     }
 }
+
 
 @media only screen and (max-width: 768px) {
     .supply-title-block_task,
@@ -60,12 +75,6 @@
 
     .supply-blocktop-img__mini-img {
         display: none;
-    }
-
-    .background-block {
-        width: 100%;
-        height: 100%;
-        padding: 50px 20px 50px 20px;
     }
 }
 
