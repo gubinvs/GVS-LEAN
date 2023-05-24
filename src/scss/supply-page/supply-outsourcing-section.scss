@@ -129,6 +129,16 @@
     }
 }
 
+@media only screen and (max-width: 670px) {
+    .supply-img-block {
+        display: none;
+    }
+    
+    .block-content {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .supply-outsourcing-container {
         flex-direction: column;
@@ -138,4 +148,9 @@
     .supply-img-block {
         display: none;
     }
+
+    .supply-outsourcing-section {
+        margin-bottom: 20px;
+    }
+    
 }

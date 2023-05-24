@@ -260,6 +260,11 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .img-block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
   .supply-outsourcing-container {
     flex-direction: column;
     align-items: center;
