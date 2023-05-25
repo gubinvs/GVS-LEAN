@@ -259,9 +259,12 @@
     left: 55px;
   }
 }
-@media only screen and (max-width: 480px) {
-  .img-block {
+@media only screen and (max-width: 670px) {
+  .supply-img-block {
     display: none;
+  }
+  .block-content {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -271,6 +274,9 @@
   }
   .supply-img-block {
     display: none;
+  }
+  .supply-outsourcing-section {
+    margin-bottom: 20px;
   }
 }
 .supply-blocktop-img {
@@ -312,19 +318,63 @@
   margin-bottom: 12px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .background-block {
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px 50px 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .supply-task-section {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .supply-title-block_task {
+    width: 100%;
+  }
+  .background-block {
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px 50px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-title-block_task,
+  .supply-title-block__border_task,
+  .supply-title-block__text_task {
+    display: inherit !important;
+  }
+  .supply-blocktop-img__mini-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .supply-blocktop-img__mini-img,
+  .supply-blocktop-img__big-img {
+    display: none;
+  }
+  .supply-title-block__text_task {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+  .background-block__content {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
 .supply-accounting-section {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 140px;
+}
+
+.supply-accounting-section__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .supply-accounting-section__block-img {
   position: relative;
-  width: 492px;
-  margin-right: 120px;
+  width: 50%;
 }
 
 .sas-block-img__border {
@@ -337,6 +387,7 @@
   position: absolute;
   top: 30px;
   left: 30px;
+  width: 100%;
 }
 
 .supply-title-block__accounting-section {
@@ -362,6 +413,24 @@
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .supply-accounting-section__block-img {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-accounting-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-content {
+    width: 100%;
+  }
+  .supply-title-block__accounting-section {
+    display: inherit !important;
+  }
+}
 .supply-question-section {
   position: relative;
   display: flex;

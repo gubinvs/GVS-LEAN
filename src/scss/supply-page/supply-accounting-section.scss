@@ -2,30 +2,30 @@
 @import '../variables/variables.scss';
 
 .supply-accounting-section {
-    display: flex;
-    justify-content: flex-start;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 140px;
+}
+
+.supply-accounting-section__container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .supply-accounting-section__block-img {
     position: relative;
-    width: 492px;
-    margin-right: 120px;
+    width: 50%;
 }
 
 .sas-block-img__border{
-    width: 323px;
-    height: 297px;
+    width: 280px;
+    height: 220px;
     background-color: $borderColorMax;
 }
 
 .sas-block-img__img {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 10px;
+    left: 10px;
+    width: 100%;
 }
 
 .supply-title-block__accounting-section {
@@ -52,5 +52,41 @@
 }
 
 
+@media only screen and (max-width: 1280px) {
+    .supply-accounting-section__block-img {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .supply-accounting-section__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-content {
+        width: 100%;
+    }
+
+    .put-none {
+        display: inherit !important;
+    }
+
+    .supply-accounting-section__block-img {
+        margin-bottom: 100px;
+    }
+
+    .sas-block-img__border {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 663px) {
+    .supply-accounting-section__block-img {
+        display: none;
+    }
+}
 
 
