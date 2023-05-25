@@ -378,15 +378,15 @@
 }
 
 .sas-block-img__border {
-  width: 323px;
-  height: 297px;
+  width: 280px;
+  height: 220px;
   background-color: #8E0532;
 }
 
 .sas-block-img__img {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 10px;
+  left: 10px;
   width: 100%;
 }
 
@@ -427,8 +427,17 @@
   .block-content {
     width: 100%;
   }
-  .supply-title-block__accounting-section {
-    display: inherit !important;
+  .supply-accounting-section__block-img {
+    margin-bottom: 100px;
+  }
+  .sas-block-img__border {
+    width: 280px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 663px) {
+  .supply-accounting-section__block-img {
+    display: none;
   }
 }
 .supply-question-section {
@@ -503,6 +512,15 @@
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .question-list__item_question {
+    width: 562px;
+    height: 65px;
+    padding-left: 22px;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
 .supply-request-section {
   display: flex;
   justify-content: center;
@@ -582,6 +600,9 @@
   .supply-title-block__border,
   .supply-title-block__text {
     display: none;
+  }
+  .put-none {
+    display: inherit !important;
   }
   .supply-title-block_mobile {
     display: inherit;
