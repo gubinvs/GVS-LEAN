@@ -1582,10 +1582,6 @@ select {
     height: 40px;
   }
 
-  .question-list__item_question {
-    background-image: none;
-  }
-
   .question-list__item_answer {
     width: 320px;
     padding-left: 10px;

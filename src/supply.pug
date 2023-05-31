@@ -9,6 +9,8 @@ block doctype
     - var titleName = 'Агентство закупочных процедур';
     //- Массив с путями к файлам со стилями
     - var stylePath = [];
+    //-- указывает поисковому роботу адрес главной страницы среди группы страниц дублей
+    - var canonical = '';
 
 
 //- Вставил блок с будующим контентом
@@ -21,6 +23,6 @@ block content
         include html/supply-page/supply-task-section.pug
         include html/supply-page/supply-accounting-section.pug
         include html/supply-page/supply-questions-section.pug 
-        //-- include html/supply-page/supply-request-section.pug 
+        include html/supply-page/supply-request-section.pug 
         //-- include html/footer.pug 
         script(src="js/app.js")

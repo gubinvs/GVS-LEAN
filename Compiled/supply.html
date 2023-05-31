@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Берем на себя обязанность по обеспечению потребности в материалах и комплектующих, анализируем цены на рынке, формируем и отправляем заявки на закупку поставщикам. Контролируем сроки поставок и ведем учет движения материалов.">
     <link rel="icon" href="https://gubinvs.ru/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css"><!-- . -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href=""><!-- . -->
     <title>Агентство закупочных процедур</title>
   </head>
   <body>
@@ -170,6 +171,22 @@
                 Курируем вопросы охраны труда и техники безопасности. 
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="supply-request-section">
+        <form class="form-block" action="https://gubinvs.ru/lean/php/request-form.php" method="POST">
+          <h3 class="form-block__title">Остались вопросы или уже готовы к сотрудничеству</h3>
+          <input class="form-block__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="form-block__input" type="Email" name="email" placeholder="Ваш e-mail" required>
+          <input class="form-block__input" type="tel" name="tel" placeholder="+7 000 000 00 00" required>
+          <textarea class="form-message__textarea" name="message" cols="15" rows="3" placeholder="Ваше сообщение ..." required></textarea>
+          <button class="footer__button" type="submit">Отправить сообщение</button>
+          <input type="hidden" name="act" value="order">
+        </form>
+        <div class="request-section__img-block">
+          <div class="img-block request-section__img-block">
+            <div class="fon-block request-section__fon-block"></div>
           </div>
         </div>
       </section>
