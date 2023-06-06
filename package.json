@@ -1,7 +1,6 @@
 {
   "name": "gulp",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -47,5 +46,6 @@
     "bootstrap": "^5.2.1",
     "fs": "^0.0.1-security",
     "php-server": "^1.0.0"
-  }
+  },
+  "description": ""
 }
