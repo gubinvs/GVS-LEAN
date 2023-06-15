@@ -8,5 +8,8 @@ section.supply-request-section
         button(type="submit").footer__button Отправить сообщение
         input(type="hidden" name="act" value="order")
     .request-section__img-block
-        .img-block.request-section__img-block
+        .img-block
+            picture
+                source(srcset="../../img/supply-page/request-section__img_1024.jpg" media="(max-width: 1024px)")
+                img(src="../../img/supply-page/request-section__img_1024.jpg", alt="Мужчина и женьщина ведут переговоры с потенциальным клиентом").request-section__img-block
             .fon-block.request-section__fon-block

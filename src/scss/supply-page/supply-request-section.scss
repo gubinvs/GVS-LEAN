@@ -47,12 +47,12 @@
     width: 440px;
 }
 
-.request-section__img-block {
-    height: 540px;
-    background-image: url(../img/supply-page/request-section__img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
+// .request-section__img-block {
+//     height: 540px;
+//     background-image: url(../img/supply-page/request-section__img.jpg);
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
 
 .request-section__fon-block {
     height: 605px;
@@ -73,7 +73,9 @@
 
     .request-section__fon-block {
         width: 152px;
+        height: 640px;
     }
+    
 
     .request-section__img-block {
         width: 372px;
