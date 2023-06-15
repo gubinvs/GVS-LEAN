@@ -1,26 +1,25 @@
 //-- переменные
 @import '../variables/variables.scss';
 
-.supply-request-section {
+.supply-request-section__container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+    justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .form-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 510px;
-    margin-right: 60px;
+    width: 491px;
 }
 
 .form-block__title {
     font-family: 'Days One';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 61px;
+    font-size: 44px;
+    line-height: 56px;
     color: $borderColorMax;
     margin-bottom: 20px;
 }
@@ -44,41 +43,28 @@
 }
 
 .request-section__img-block {
-    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 410px;
 }
 
-// .request-section__img-block {
-//     height: 540px;
-//     background-image: url(../img/supply-page/request-section__img.jpg);
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
-
-.request-section__fon-block {
-    height: 605px;
+.request-section__img-block_border {
+    width: 240px;
+    height: 20px;
+    background-color: $borderColorMax;
 }
+
 
 @media only screen and (max-width: 1024px) {
     .form-block {
+        width: 374px;
         margin-right: 20px;
     }
+
     .form-block__title {
-        font-size: 44px;
-        line-height: 56px;
-    }
-
-    .fon-block {
-        left: 110px;
-    }
-
-    .request-section__fon-block {
-        width: 152px;
-        height: 640px;
-    }
-    
-
-    .request-section__img-block {
-        width: 372px;
+        font-size: 40px;
+        line-height: 51px;
     }
 }
 
