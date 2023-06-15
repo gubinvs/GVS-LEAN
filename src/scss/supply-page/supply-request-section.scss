@@ -59,10 +59,27 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .supply-request-section {
-        flex-direction: column;
+    .form-block {
+        margin-right: 20px;
+    }
+    .form-block__title {
+        font-size: 44px;
+        line-height: 56px;
+    }
+
+    .fon-block {
+        left: 110px;
+    }
+
+    .request-section__fon-block {
+        width: 152px;
+    }
+
+    .request-section__img-block {
+        width: 372px;
     }
 }
+
 
 @media only screen and (max-width: 768px) {
  
