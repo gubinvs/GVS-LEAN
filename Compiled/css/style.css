@@ -1652,6 +1652,28 @@ select {
     line-height: 51px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .supply-request-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-block {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .request-section__img-block {
+    display: none;
+  }
+
+  .form-block__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .supply-title-block {
     flex-direction: column;

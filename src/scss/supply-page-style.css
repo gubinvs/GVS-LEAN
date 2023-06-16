@@ -573,9 +573,9 @@
     padding-left: 10px;
   }
 }
-.supply-request-section {
+.supply-request-section__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 100px;
 }
 
@@ -583,16 +583,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 510px;
-  margin-right: 60px;
+  width: 491px;
 }
 
 .form-block__title {
   font-family: "Days One";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 61px;
+  font-size: 44px;
+  line-height: 56px;
   color: #8E0532;
   margin-bottom: 20px;
 }
@@ -615,14 +614,38 @@
   color: #FFFFFF;
 }
 
-.form-block {
-  width: 491px;
-}
-
 .request-section__img-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 410px;
 }
 
+.request-section__img-block_border {
+  width: 240px;
+  height: 20px;
+  background-color: #8E0532;
+}
+
+@media only screen and (max-width: 1024px) {
+  .form-block {
+    width: 374px;
+    margin-right: 20px;
+  }
+  .form-block__title {
+    font-size: 40px;
+    line-height: 51px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-request-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .supply-title-block {
     flex-direction: column;
