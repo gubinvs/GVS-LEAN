@@ -775,3 +775,21 @@ select {
   font-size: 18px;
   color: #FFFFFF;
 }
+
+@media only screen and (max-width: 1024px) {
+  .footer-section__left-block {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .supply-footer__continer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 0px 60px 40px;
+  }
+  .footer-section__left-block {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
