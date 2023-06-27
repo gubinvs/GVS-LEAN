@@ -285,10 +285,6 @@ button {
   background-color: #000000;
 }
 
-.burger_close span {
-  display: none;
-}
-
 .burger::before {
   top: 0px;
 }
@@ -299,9 +295,9 @@ button {
 
 .burger_close {
   position: relative;
-  display: none;
   width: 40px;
   height: 30px;
+  margin-right: 12px;
 }
 
 .burger_close::before,

@@ -1,25 +1,21 @@
 //-- Взаимодействие с бургером
 //-- инициализировал переменную с бургером
-const burger = document.getElementById('burger-default'); 
+const burger = document.getElementById('burger'); 
 //-- Инициализировал переменную с крестиком
 const burgerСlose = document.querySelector('.burger_close');
 //-- Инициализировал переменную с классом .header__mobile
-const classHeader = document.querySelector('.header');
+const classBlockActive = document.querySelector('.nav-block-active');
 //-- Инициализировал переменную с классом .header__mobile
 const classHeaderMobile = document.querySelector('.header__mobile');
 
 // событие клик по бургеру
 burger.addEventListener("click", function(e) {
-//-- добаляю классы
-classHeader.className = "header header_none";
-classHeaderMobile.className = "header__mobile header__mobile_active";
-
+    //-- добаляю классы
+    classBlockActive.className = "nav-block-active";
 });
 
-// событие клик по крестику
+// событие клик по бургеру крестику
 burgerСlose.addEventListener("click", function(e) {
-//-- добаляю классы
-classHeader.className = "header";
-classHeaderMobile.className = "header__mobile";
-
+    //-- добаляю классы
+    classBlockActive.className = "nav-block-active";
 });
