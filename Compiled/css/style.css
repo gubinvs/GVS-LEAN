@@ -331,7 +331,6 @@ button {
 }
 
 .nav-block-active {
-  display: none;
   width: 610px;
   padding: 20px 50px 20px 50px;
   border: 1px solid #8E0532;
@@ -343,10 +342,6 @@ button {
 
 .none-block {
   display: none;
-}
-
-.active-block {
-  display: inherit;
 }
 
 .index-main-section {
