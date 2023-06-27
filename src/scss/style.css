@@ -194,7 +194,7 @@ button {
     padding: 0px 20px 0px 20px;
   }
 }
-.heder-section__container {
+.header-section__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -322,6 +322,11 @@ button {
 .burger_close::after {
   bottom: 13px;
   transform: rotate(45deg);
+}
+
+.nav-block-active {
+  width: 500px;
+  border: 1px solid #8E0532;
 }
 
 .index-main-section {
