@@ -132,7 +132,24 @@
     transform: rotate(45deg);
 }
 
+
+.nav-header-list__active {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 162px;
+}
+
 .nav-block-active {
-    width: 500px;
+    display: none;
+    width: 610px;
+    padding: 20px 50px 20px 50px;
     border: 1px solid $borderColorMax;
+}
+
+.nav-header-list__item_active:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+
+.none-block {
+    display: none;
 }
