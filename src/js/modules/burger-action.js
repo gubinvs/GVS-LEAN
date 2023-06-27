@@ -2,7 +2,7 @@
 //-- инициализировал переменную с бургером
 const burger = document.getElementById('burger-default'); 
 //-- Инициализировал переменную с крестиком
-const burgerСlose = document.querySelector('.header-burger_close');
+const burgerСlose = document.querySelector('.burger_close');
 //-- Инициализировал переменную с классом .header__mobile
 const classHeader = document.querySelector('.header');
 //-- Инициализировал переменную с классом .header__mobile
