@@ -237,6 +237,10 @@ button {
   margin-right: 22px;
 }
 
+.nav-header-list__item:hover {
+  color: #8E0532;
+}
+
 .burger-room-block {
   display: flex;
   align-items: center;
@@ -324,16 +328,14 @@ button {
   display: flex;
   justify-content: flex-end;
   padding-right: 162px;
+  margin-bottom: 50px;
 }
 
 .nav-block-active {
+  display: inline-block;
   width: 610px;
   padding: 20px 50px 20px 50px;
   border: 1px solid #8E0532;
-}
-
-.nav-header-list__item_active:not(:last-of-type) {
-  margin-bottom: 4px;
 }
 
 .none-block {
