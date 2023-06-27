@@ -39,6 +39,10 @@
     line-height: 25px;
     font-weight: 400;
     color: $textColor;
+    padding-left: 28px;
+    background-image: url(../img/index-page/tb-list-item__check-img_480.png);
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .nav-header-list__item:not(:last-of-type) {
@@ -142,11 +146,36 @@
 
 .nav-block-active {
     display: inline-block;
-    width: 610px;
+    width: 650px;
     padding: 20px 50px 20px 50px;
     border: 1px solid $borderColorMax;
 }
 
+.nav-header-list__item_active {
+    display: block;
+    margin-bottom: 8px;
+}
+
 .none-block {
     display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .nav-header-list {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    .room-butom {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-border, 
+    .logo-title {
+        display: none;
+    }
 }
