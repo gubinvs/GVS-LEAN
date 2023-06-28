@@ -2028,6 +2028,45 @@ select {
     padding-left: 0px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .labor-main-section__container {
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .lms-left-block {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    z-index: 100;
+  }
+
+  .lms-right-block {
+    width: 100%;
+    padding-left: 210px;
+  }
+
+  .lms-title-block__title {
+    color: #FFFFFF;
+  }
+
+  .lms-title-block__discription {
+    color: #DE84A2;
+    margin-bottom: 186px;
+  }
+
+  .lms-title-block__button {
+    width: 235px;
+    height: 40px;
+    background-color: #F7F7F7;
+    color: #8E0532;
+  }
+
+  .windows-phone-block {
+    padding-top: 20px;
+    margin-bottom: 12px;
+  }
+}
 .messageok-section {
   display: flex;
   flex-direction: column;
