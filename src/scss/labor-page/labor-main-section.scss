@@ -102,3 +102,13 @@
 .second-line {
     color: #FFFFFF;
 }
+
+@media only screen and (max-width: 1280px) {
+    .lms-left-block {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
