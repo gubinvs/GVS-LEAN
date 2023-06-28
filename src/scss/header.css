@@ -159,13 +159,14 @@
   .nav-header-list {
     display: none;
   }
+  .nav-header-list__active {
+    padding-right: 0px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .room-butom {
     display: none;
   }
-}
-@media only screen and (max-width: 768px) {
   .logo-border,
   .logo-title {
     display: none;
