@@ -367,6 +367,18 @@ button {
   .logo-title {
     display: none;
   }
+  .nav-header-list__item {
+    font-size: 16px;
+  }
+  .nav-block-active {
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .nav-header-list__item {
+    font-size: 14px;
+  }
 }
 .index-main-section {
   display: flex;
@@ -2005,6 +2017,37 @@ select {
   .windows-phone-block {
     padding-top: 20px;
     margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lms-left-block {
+    left: 65px;
+  }
+  .lms-right-block {
+    padding-left: 24px;
+  }
+  .nav-header-list__active {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .lms-left-block {
+    left: 45px;
+  }
+  .lms-right-block__img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .lms-title-block__discription {
+    width: 320px;
+  }
+  .windows-phone-block {
+    padding-top: 120px;
+  }
+  .lms-right-block {
+    padding-left: 24px;
+    height: 395px;
   }
 }
 .messageok-section {
