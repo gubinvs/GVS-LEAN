@@ -1879,6 +1879,14 @@ select {
     line-height: 36px;
   }
 }
+body {
+  background-color: #ffffff;
+}
+
+.labor-main-section {
+  margin-bottom: 16px;
+}
+
 .labor-main-section__container {
   display: flex;
   justify-content: space-between;
@@ -2048,6 +2056,14 @@ select {
     height: 395px;
   }
 }
+.labor-suot-section {
+  background-color: #F9F8F8;
+}
+
+.labor-suot-section__title {
+  padding-top: 24px;
+}
+
 .messageok-section {
   display: flex;
   flex-direction: column;

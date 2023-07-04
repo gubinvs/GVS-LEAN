@@ -1,3 +1,11 @@
+body {
+  background-color: #ffffff;
+}
+
+.labor-main-section {
+  margin-bottom: 16px;
+}
+
 .labor-main-section__container {
   display: flex;
   justify-content: space-between;
@@ -166,4 +174,11 @@
     padding-left: 24px;
     height: 395px;
   }
+}
+.labor-suot-section {
+  background-color: #B3A99B;
+}
+
+.labor-suot-section__title {
+  padding-top: 24px;
 }

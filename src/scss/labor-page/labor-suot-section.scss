@@ -1,0 +1,10 @@
+//-- переменные
+@import '../variables/variables.scss';
+
+.labor-suot-section {
+    background-color: $bgSectionColor;
+}
+
+.labor-suot-section__title {
+    padding-top: 24px;
+}

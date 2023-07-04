@@ -1,6 +1,10 @@
 //-- переменные
 @import '../variables/variables.scss';
 
+.labor-main-section {
+    margin-bottom: 16px;
+}
+
 .labor-main-section__container {
     display: flex;
     justify-content: space-between;
