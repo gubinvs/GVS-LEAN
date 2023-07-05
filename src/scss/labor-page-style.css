@@ -184,6 +184,12 @@ body {
   margin-bottom: 40px;
 }
 
+.block-content-ss {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .suot-card {
   display: flex;
   padding-left: 50px;
@@ -227,7 +233,7 @@ body {
 .left-part-sc__button {
   width: 190px;
   height: 48px;
-  padding: 14px 24px;
+  padding: 10px 24px;
   text-align: center;
   background-color: #8E0532;
   color: #FFFFFF;
