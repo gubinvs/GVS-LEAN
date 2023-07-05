@@ -28,7 +28,7 @@
 }
 
 .suot-card__left-part {
-    width: 256px;
+    width: 236px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -44,7 +44,7 @@
 .left-part-sc__list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 96px;
+    margin-bottom: 60px;
 }
 
 .left-part-sc__item {
@@ -58,7 +58,7 @@
 }
 
 .left-part-sc__item:not(:last-of-type) {
-    margin-bottom: 4px;
+    margin-bottom: 12px;
 }
 
 .left-part-sc__button {
@@ -79,7 +79,7 @@
 .right-part-sc__text {
     position: absolute;
     bottom: 200px;
-    left: -94px;
+    left: -112px;
     width: 290px;
     font-family: $ffWindowsPhone;
     font-size: 38px;
@@ -92,3 +92,18 @@
     flex-shrink: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+    .suot-card__none {
+        display: none;
+    }
+    
+    .suot-card:not(:nth-child(3)) {
+        margin-bottom: 20px;
+    }
+
+    .suot-card:nth-child(2) {
+        margin-right: 0px;
+    }
+
+
+} 
