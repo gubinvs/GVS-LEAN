@@ -2059,6 +2059,7 @@ body {
 .labor-suot-section {
   background-color: #F9F8F8;
   padding-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .labor-suot-section__title {
@@ -2171,6 +2172,53 @@ body {
   }
   .suot-card__left-part {
     width: calc(100% - 64px);
+  }
+}
+.labor-control-section__container {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  background-color: #F9F8F8;
+  margin-bottom: 20px;
+}
+
+.labor-control-section__img {
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+}
+
+.labor-control-section__title {
+  margin-bottom: 20px;
+}
+
+.labor-control-section__discr {
+  width: 406px;
+  margin-bottom: 94px;
+}
+
+.labor-control-section__slogan {
+  color: #8E0532;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.labor-control-section__slogan_light {
+  color: #CA6486;
+}
+
+@media only screen and (max-width: 768px) {
+  .labor-control-section__img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .labor-control-section__discr {
+    width: 100%;
   }
 }
 .messageok-section {
