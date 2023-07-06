@@ -194,6 +194,7 @@ body {
 .suot-card {
   display: flex;
   padding-left: 20px;
+  width: 320px;
   background-color: #FFFFFF;
 }
 
@@ -202,7 +203,7 @@ body {
 }
 
 .suot-card__left-part {
-  width: 256px;
+  width: 236px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -218,7 +219,7 @@ body {
 .left-part-sc__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 96px;
+  margin-bottom: 60px;
 }
 
 .left-part-sc__item {
@@ -232,7 +233,7 @@ body {
 }
 
 .left-part-sc__item:not(:last-of-type) {
-  margin-bottom: 4px;
+  margin-bottom: 12px;
 }
 
 .left-part-sc__button {
@@ -253,7 +254,7 @@ body {
 .right-part-sc__text {
   position: absolute;
   bottom: 200px;
-  left: -94px;
+  left: -112px;
   width: 290px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 38px;
@@ -264,4 +265,16 @@ body {
   transform: rotate(-90deg);
   flex-direction: column;
   flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .suot-card__none {
+    display: none;
+  }
+  .suot-card:not(:nth-child(3)) {
+    margin-bottom: 20px;
+  }
+  .suot-card:nth-child(2) {
+    margin-right: 0px;
+  }
 }

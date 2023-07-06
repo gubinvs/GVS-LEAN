@@ -2144,8 +2144,10 @@ body {
 }
 
 .suot-card {
+  position: relative;
   display: flex;
   padding-left: 20px;
+  width: 320px;
   background-color: #FFFFFF;
 }
 
@@ -2197,7 +2199,6 @@ body {
 }
 
 .suot-card__right-part {
-  position: relative;
   width: 64px;
   background-color: #8E0532;
 }
@@ -2205,7 +2206,7 @@ body {
 .right-part-sc__text {
   position: absolute;
   bottom: 200px;
-  left: -112px;
+  right: -112px;
   width: 290px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 38px;
@@ -2229,6 +2230,23 @@ body {
 
   .suot-card:nth-child(2) {
     margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .suot-card__none {
+    display: inherit;
+  }
+
+  .suot-card {
+    width: 100%;
+  }
+
+  .suot-card:not(:last-of-type) {
+    margin-right: 0px;
+  }
+
+  .suot-card__left-part {
+    width: calc(100% - 64px);
   }
 }
 .messageok-section {
