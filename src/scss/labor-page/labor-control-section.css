@@ -35,13 +35,89 @@
   color: #CA6486;
 }
 
-@media only screen and (max-width: 768px) {
-  .labor-control-section__img {
-    display: none;
+.labor-control-section__card-block {
+  display: flex;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card-lcs {
+  width: 413px;
+}
+
+.card-lcs:not(:last-of-type) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card-lcs__bady {
+  width: 100%;
+  height: 400px;
+  padding-top: 24px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #F9F8F8;
+}
+
+.card-lcs__icon {
+  margin-bottom: 30px;
+}
+
+.card-lcs__title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.card-lcs__discr {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.card-lcs__border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #8E0532;
+}
+
+.card-lcs__border_discr {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1280px) {
+  .card-lcs {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .card-lcs {
+    width: 374px;
+  }
+  .card-lcs:nth-child(2) {
+    margin-right: 0px;
   }
 }
 @media only screen and (max-width: 768px) {
   .labor-control-section__discr {
     width: 100%;
+  }
+  .labor-control-section__img {
+    display: none;
+  }
+  .card-lcs {
+    width: 100%;
+  }
+  .card-lcs:not(:last-of-type) {
+    margin-right: 0px;
   }
 }
