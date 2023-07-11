@@ -1,0 +1,8 @@
+//-- переменные
+@import '../variables/variables.scss';
+
+.labor-information-section__title {
+    width: 100%;
+    border-bottom: 1px solid $bgSectionColor;
+    color: $bgSectionColor;
+}
