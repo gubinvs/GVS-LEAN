@@ -2292,12 +2292,68 @@ body {
     margin-right: 0px;
   }
 }
+.labor-information-section {
+  padding-bottom: 40px;
+}
+
 .labor-information-section__title {
-  width: 100%;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #D9D9D9;
   color: #D9D9D9;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
+}
+
+.labor-information-section__discr-block {
+  display: flex;
+}
+
+.discr-block-lis__card {
+  padding-top: 20px;
+  border-top: 1px solid #D9D9D9;
+}
+
+.discr-block-lis__card1 {
+  width: 847px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.db-lis-card__title {
+  font-family: "Days One", "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.db-lis-card__text {
+  width: 490px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.discr-block-lis__card2 {
+  width: 413px;
+}
+
+.db-lis-card__text_card2 {
+  width: 269px;
+}
+
+.discr-block-lis__card3,
+.discr-block-lis__card4 {
+  width: 630px;
+}
+
+.discr-block-lis__card3 {
+  margin-right: 20px;
+}
+
+.db-lis-card__text_card3,
+.db-lis-card__text_card4 {
+  width: 370px;
 }
 
 .messageok-section {
