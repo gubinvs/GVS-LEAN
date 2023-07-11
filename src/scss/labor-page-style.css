@@ -183,19 +183,19 @@ body {
 
 .labor-suot-section__title {
   padding-top: 24px;
+  padding-left: 90px;
   margin-bottom: 40px;
 }
 
 .block-content-ss {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .suot-card {
-  position: relative;
   display: flex;
-  padding-left: 20px;
+  flex-direction: column;
   width: 320px;
   background-color: #FFFFFF;
 }
@@ -205,7 +205,7 @@ body {
 }
 
 .suot-card__left-part {
-  width: 236px;
+  width: 320px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -215,13 +215,15 @@ body {
   font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: 700;
+  padding-left: 24px;
   margin-bottom: 24px;
 }
 
 .left-part-sc__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  padding-left: 24px;
+  margin-bottom: 40px;
 }
 
 .left-part-sc__item {
@@ -238,6 +240,15 @@ body {
   margin-bottom: 12px;
 }
 
+.suot-card__bottom-part {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 196px;
+  height: 54px;
+  background-color: #F9F8F8;
+}
+
 .left-part-sc__button {
   width: 190px;
   height: 48px;
@@ -247,27 +258,11 @@ body {
   color: #FFFFFF;
 }
 
-.suot-card__right-part {
-  width: 64px;
-  background-color: #8E0532;
+@media only screen and (max-width: 1280px) {
+  .labor-suot-section__title {
+    padding-left: 0px;
+  }
 }
-
-.right-part-sc__text {
-  position: absolute;
-  bottom: 200px;
-  right: -112px;
-  width: 290px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: #FFFFFF;
-  transform: rotate(-90deg);
-  flex-direction: column;
-  flex-shrink: 0;
-}
-
 @media only screen and (max-width: 1024px) {
   .suot-card__none {
     display: none;
@@ -330,13 +325,89 @@ body {
   color: #CA6486;
 }
 
-@media only screen and (max-width: 768px) {
-  .labor-control-section__img {
-    display: none;
+.labor-control-section__card-block {
+  display: flex;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card-lcs {
+  width: 413px;
+}
+
+.card-lcs:not(:last-of-type) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card-lcs__bady {
+  width: 100%;
+  height: 400px;
+  padding-top: 24px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #F9F8F8;
+}
+
+.card-lcs__icon {
+  margin-bottom: 30px;
+}
+
+.card-lcs__title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.card-lcs__discr {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.card-lcs__border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #8E0532;
+}
+
+.card-lcs__border_discr {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1280px) {
+  .card-lcs {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .card-lcs {
+    width: 374px;
+  }
+  .card-lcs:nth-child(2) {
+    margin-right: 0px;
   }
 }
 @media only screen and (max-width: 768px) {
   .labor-control-section__discr {
     width: 100%;
   }
-}
+  .labor-control-section__img {
+    display: none;
+  }
+  .card-lcs {
+    width: 100%;
+  }
+  .card-lcs:not(:last-of-type) {
+    margin-right: 0px;
+  }
+}/*# sourceMappingURL=labor-page-style.css.map */
