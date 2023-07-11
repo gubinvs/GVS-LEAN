@@ -410,4 +410,9 @@ body {
   .card-lcs:not(:last-of-type) {
     margin-right: 0px;
   }
-}/*# sourceMappingURL=labor-page-style.css.map */
+}
+.labor-information-section__title {
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+  color: #DDDDDD;
+}
