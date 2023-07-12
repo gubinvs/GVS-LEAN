@@ -28,11 +28,13 @@
 }
 
 body {
-    background-color: $bgColorBady;
+    // background-color: $bgColorBady;
+    background-color: red;
     font-family: $ffTextBady;
     font-style: normal;
     color: $textColor;
 }
+
 
 section,
 header,
