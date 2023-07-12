@@ -474,3 +474,16 @@ body {
 .db-lis-card__text_card4 {
   width: 370px;
 }
+
+@media only screen and (max-width: 1280px) {
+  .discr-block-lis__card1 {
+    width: 660px;
+  }
+  .discr-block-lis__card2 {
+    width: 320px;
+  }
+  .discr-block-lis__card3,
+  .discr-block-lis__card4 {
+    width: 490px;
+  }
+}/*# sourceMappingURL=labor-page-style.css.map */
