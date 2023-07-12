@@ -21,6 +21,7 @@
 @import 'variables/variables.scss';
 
 
+
 ::placeholder {
     padding-left: 20px;
     color: $borderColor;
@@ -28,8 +29,7 @@
 }
 
 body {
-    // background-color: $bgColorBady;
-    background-color: red;
+    background-color: $bgColorBady;
     font-family: $ffTextBady;
     font-style: normal;
     color: $textColor;
@@ -112,6 +112,8 @@ button {
         padding: 0px 20px 0px 20px;
     }
 }
+
+
 
 @import 'header.scss';
 @import 'lean-page-style.scss';
