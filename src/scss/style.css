@@ -74,8 +74,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 a {
@@ -109,11 +108,6 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-::-moz-placeholder {
-  padding-left: 20px;
-  color: #B3A99B;
-  font-size: 14px;
 }
 ::placeholder {
   padding-left: 20px;
@@ -734,8 +728,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 a {
@@ -877,8 +870,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 a {
@@ -2439,4 +2431,4 @@ body {
 .discriptin-block {
   display: flex;
   justify-content: space-between;
-}/*# sourceMappingURL=style.css.map */
+}

@@ -74,7 +74,6 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -110,12 +109,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-::-moz-placeholder {
-  padding-left: 20px;
-  color: #B3A99B;
-  font-size: 14px;
-}
-
 ::placeholder {
   padding-left: 20px;
   color: #B3A99B;
@@ -748,7 +741,6 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -891,7 +883,6 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -2506,7 +2497,7 @@ body {
 .db-lis-card__text_card2,
 .db-lis-card__text_card3,
 .db-lis-card__text_card4 {
-    width: 50%;
+    width: 70%;
   }
 }
 .messageok-section {
@@ -2531,5 +2522,3 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-/*# sourceMappingURL=style.css.map */
