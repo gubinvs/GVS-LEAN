@@ -1,0 +1,83 @@
+//- Подключил шаблон с разметкой страницы
+extends doctypes.pug
+
+//- Изменил название страницы
+block doctype
+    //- Описание страницы в head discription
+    - var contentDiscription = 'Информация отраженная в брифе станет основанем для составления технического задания, которое, в свою очередь, будет сводом правил для разработки будущего сайта';
+    //- Наименование главной страницы
+    - var titleName = 'Бриф на разработку сайта';
+    //- Массив с путями к файлам со стилями
+    - var stylePath = ['https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css?_v=20220807133642'];
+
+//- Вставил блок с будующим контентом
+block content
+    .container.brief-container
+        h1.brief__title Заявка на коммерческое предложение
+        form(method="post", action="php/send_brief.php").brief-form
+            .brief-section
+                .brief-form__item
+                    .brief-form__label Дата заполнения:
+                    .bf-item__input-block
+                        input(type="date", id="dateIssue", value="12.04.2022", name="dateIssue", required).brief-form__input.brief-form__input_date
+
+            .brief-section
+                h3.brief__title_h3 Информация о компании:
+                .brief-form__item
+                    .brief-form__label Название компании:
+                    .bf-item__input-block
+                        input(type="text", id="nameCompany", name="nameCompany", placeholder="Ваше имя, если частное лицо", required).brief-form__input
+                .brief-form__item
+                    .brief-form__label Сфера деятельности:
+                    .bf-item__input-block
+                        input(type="text", id="fieldActivity", name="fieldActivity").brief-form__input
+                .brief-form__item
+                    .brief-form__label ИНН организации:
+                    .bf-item__input-block
+                        input(type="text", id="innCompany", min="10", name="innCompany", maxlength="10").brief-form__input
+                .brief-form__item
+                    .brief-form__label Адрес текущего сайта:
+                    .bf-item__input-block
+                        input(type="text", id="companySite", name="companySite").brief-form__input
+            .brief-section
+                h3.brief__title_h3 Контактная информация:
+                .brief-form__item
+                    .brief-form__label Контактное лицо:
+                    .bf-item__input-block
+                        input(type="text", id="companyContact", name="companyContact", required).brief-form__input
+                .brief-form__item
+                    .brief-form__label Телефон:
+                    .bf-item__input-block
+                        input(type="tel", id="companyPhone", name="companyPhone", required).brief-form__input
+                .brief-form__item
+                    .brief-form__label E-mail:
+                    .bf-item__input-block
+                        input(type="email", id="companyEmail", name="companyEmail", required).brief-form__input
+            .brief-section
+                h3.brief__title_h3 Дизайн и функционал сайта:
+                .brief-form__item
+                    .brief-form__label Сайты конкурентов:
+                    .bf-item__input-block
+                        input(type="text", id="siteRival", name="siteRival").brief-form__input
+                .brief-form__item
+                    .brief-form__label Нравятся сайты:
+                    .bf-item__input-block
+                        input(type="tel", id="siteLike", name="siteLike").brief-form__input
+                .brief-form__item
+                    .brief-form__label Фирменный шрифт:
+                    .bf-item__input-block
+                        input(type="text", id="companyFonts", name="companyFonts").brief-form__input
+                .brief-form__item
+                    .brief-form__label Логотип компании:
+                    .bf-item__input-block
+                        input(type="file", id="companyLogo", name="companyLogo").brief-form__input_file.form-control
+                .brief-form__item
+                    .brief-form__label Верстка сайта:
+                    .bf-item__input-block
+                        select(name="sitelayout").brief-form__select
+                            option(value="Адаптивная") Адаптивная
+                            option(value="Desktop - 1920px") Desktop - 1920px
+                    
+            button(type="submit").brief-form__button_submit Отправить бриф
+            input(type="hidden" name="act" value="order")
+    
