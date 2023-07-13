@@ -416,6 +416,7 @@ body {
 }
 
 .labor-information-section__title {
+  font-family: "Days One", "Roboto Condensed", sans-serif;
   color: #D9D9D9;
   margin-bottom: 4px;
 }
@@ -528,4 +529,4 @@ body {
   .db-lis-card__text_card4 {
     width: 70%;
   }
-}
+}/*# sourceMappingURL=labor-page-style.css.map */
