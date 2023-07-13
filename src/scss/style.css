@@ -532,23 +532,28 @@ button {
 }
 .step-section {
   display: flex;
-  justify-content: space-between;
   max-width: 1280px;
   padding-bottom: 80px;
 }
 
 .discription-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.content-title__step-section {
+  padding-left: 48px;
 }
 
 .discription-card {
   padding-bottom: 40px;
   width: 320px;
   height: 480px;
-  border: 2px solid #8E0532;
-  border-radius: 18px;
-  box-shadow: 0px 0px 10px #000000;
+  border: 1px solid #b9b9b9;
+}
+
+.discription-card:not(:last-of-type) {
+  margin-right: 20px;
 }
 
 .discription-card__img {
@@ -557,7 +562,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 50px;
-  border-radius: 16px 16px 0px 0px;
 }
 
 .discription-card__img1 {
