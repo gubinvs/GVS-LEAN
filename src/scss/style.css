@@ -200,13 +200,16 @@ button {
     padding: 0px 20px 0px 20px;
   }
 }
+.header-section {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .header-section__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 8px;
   margin-bottom: 8px;
 }
@@ -344,7 +347,6 @@ button {
   display: inline-block;
   width: 650px;
   padding: 20px 50px 20px 50px;
-  border: 1px solid #8E0532;
 }
 
 .nav-header-list__item_active {
@@ -388,16 +390,13 @@ button {
 .index-main-section {
   display: flex;
   justify-content: space-between;
-  width: 1280px;
-  height: 930px;
+  max-width: 100%;
+  height: 650px;
   margin-bottom: 40px;
   background-image: url(../../img/index-page/bg-index-main.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.content-block_index-page-main-section {
-  padding-top: 0px;
+  background-position: center;
+  background-color: #F9F8F8;
 }
 
 .title-block {
@@ -427,11 +426,18 @@ button {
   background-color: #8E0532;
 }
 
+.discriptin-block {
+  position: relative;
+}
+
 .discriptin-block__img {
   margin-right: 20px;
 }
 
 .block-list {
+  position: absolute;
+  top: 50px;
+  left: 50px;
   padding: 20px 80px 40px 40px;
   border-radius: 0px;
   background-color: #F7F7F7;
@@ -1209,7 +1215,6 @@ select {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #8E0532;
   background-image: url(../img/supply-page/main-img-section_1440.jpg);
   background-repeat: no-repeat;
   background-position: center;

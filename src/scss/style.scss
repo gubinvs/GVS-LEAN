@@ -21,7 +21,6 @@
 @import 'variables/variables.scss';
 
 
-
 ::placeholder {
     padding-left: 20px;
     color: $borderColor;
@@ -69,6 +68,7 @@ img {
     padding: 0;
 }
 
+
 button {
     padding: 0;
     border: none;
@@ -91,6 +91,9 @@ button {
         width: 768px;
     }
 }
+
+
+
 
 @media only screen and (max-width: 768px) {
     .container {
@@ -115,8 +118,10 @@ button {
 
 
 
+
 @import 'header.scss';
 @import 'lean-page-style.scss';
 @import 'supply-page-style.scss';
 @import 'labor-page-style.scss';
 @import 'messageok.scss';
+

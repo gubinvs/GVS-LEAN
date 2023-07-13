@@ -1,13 +1,17 @@
 //-- переменные
 @import 'variables/variables.scss';
 
+.header-section {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .header-section__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1280px;
-    margin-right: auto;
-    margin-left: auto;
     padding-top: 8px;
     margin-bottom: 8px;
 }
@@ -147,7 +151,7 @@
     display: inline-block;
     width: 650px;
     padding: 20px 50px 20px 50px;
-    border: 1px solid $borderColorMax;
+    // border: 1px solid $borderColorMax;
 }
 
 .nav-header-list__item_active {

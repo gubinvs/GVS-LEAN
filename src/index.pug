@@ -6,7 +6,7 @@ block doctype
     //- Описание страницы в head discription
     - var contentDiscription = 'Идеология организации бизнес-процессов, направленная на исключение производственных потерь, которые являются причиной брака и увеличением издержек';
     //- Наименование главной страницы
-    - var titleName = 'Внедрение идеологии бережливого производства, систематизации и стандартизации бизнес-процессов, политика в области охраны труда';
+    - var titleName = 'Внедрение идеологии бережливого производства, систематизация и стандартизация бизнес-процессов';
     //- Массив с путями к файлам со стилями
     - var stylePath = [];
     //-- указывает поисковому роботу адрес главной страницы среди группы страниц дублей
@@ -18,8 +18,7 @@ block content
     include html/header.pug 
     main
         h1(class="visually-hidden h1-visually", style="visibility: hidden;").h1__visually Внедрение идеологии бережливого производства
-        include html/labor-page/labor-main-section.pug 
-        //-- include html/index-page/index-main-section.pug
+        include html/index-page/index-main-section.pug
         include html/index-page/index-step-section.pug
         include html/index-page/index-audit-section.pug
         include html/index-page/index-regulation-section.pug 
