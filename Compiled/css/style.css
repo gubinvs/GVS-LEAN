@@ -520,7 +520,6 @@ button {
   }
 
   .discriptin-block__list {
-    padding-top: 40px;
     padding-left: 0px;
   }
 
@@ -542,6 +541,7 @@ button {
 
 .discription-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -553,6 +553,7 @@ button {
   padding-bottom: 50px;
   width: 320px;
   border: 1px solid #b9b9b9;
+  margin-bottom: 20px;
 }
 
 .discription-card:not(:last-of-type) {
@@ -600,6 +601,41 @@ button {
   line-height: 20px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .discription-block {
+    justify-content: flex-start;
+  }
+
+  .content-title__step-section {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .discription-card:not(:last-of-type) {
+    margin-right: 0px;
+  }
+
+  .discription-card {
+    margin-right: 0px;
+  }
+
+  .discription-card:nth-child(1) {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .discription-block {
+    justify-content: center;
+  }
+
+  .content-title__step-section {
+    padding-left: 20px;
+  }
+
+  .discription-card:nth-child(1) {
+    margin-right: 0px;
+  }
+}
 .index-audit-section {
   position: relative;
   max-width: 1280px;
