@@ -92,35 +92,23 @@
     padding: 20px 40px 40px 10px;
   }
 }
-@media only screen and (max-width: 800px) {
-  .block-list__icon {
-    display: inline;
-  }
+@media only screen and (max-width: 768px) {
   .block-list {
-    display: flex;
-    align-items: center;
-  }
-  .block-list__icon {
-    width: 115px;
-    height: 115px;
+    padding: 10px 20px 20px 10px;
   }
   .discriptin-block__list {
-    padding-top: 40px;
-    padding-left: 40px;
+    padding-left: 18px;
   }
   .list__title {
-    font-size: 32px;
-    line-height: 41px;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin-bottom: 12px;
   }
   .list__item {
-    font-size: 22px;
-    line-height: 28px;
-    padding-left: 40px;
-    background-image: url(../img/tb-list-item__check-img_800.png);
+    font-size: 16px;
+    padding-left: 32px;
   }
   .list__item:not(:last-of-type) {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -129,6 +117,9 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .index-main-section {
+    background-position: right -180px bottom -190px;
+  }
   .discriptin-block__list {
     padding-top: 40px;
     padding-left: 0px;
