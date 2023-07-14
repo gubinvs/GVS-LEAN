@@ -453,10 +453,6 @@ button {
   padding-left: 22px;
 }
 
-.block-list__icon {
-  display: none;
-}
-
 .list__title {
   font-size: 32px;
   font-weight: 500;
@@ -509,8 +505,13 @@ button {
   }
 }
 @media only screen and (max-width: 640px) {
-  .block-list__icon {
-    display: none;
+  .index-main-section {
+    height: 563px;
+    background-position: right -180px bottom -190px;
+  }
+
+  .block-list {
+    top: 338px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -527,13 +528,6 @@ button {
     font-size: 28px;
     line-height: 35px;
     margin-bottom: 16px;
-  }
-
-  .list__item {
-    font-size: 18px;
-    line-height: 23px;
-    padding-left: 32px;
-    background-image: url(../img/tb-list-item__check-img_480.png);
   }
 
   .list__item:not(:last-of-type) {
