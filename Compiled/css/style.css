@@ -74,6 +74,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -109,6 +110,12 @@ select {
     scroll-behavior: auto !important;
   }
 }
+::-moz-placeholder {
+  padding-left: 20px;
+  color: #B3A99B;
+  font-size: 14px;
+}
+
 ::placeholder {
   padding-left: 20px;
   color: #B3A99B;
@@ -472,41 +479,33 @@ button {
   margin-bottom: 18px;
 }
 
-@media only screen and (max-width: 800px) {
-  .block-list__icon {
-    display: inline;
-  }
-
+@media only screen and (max-width: 1024px) {
   .block-list {
-    display: flex;
-    align-items: center;
+    left: 0px;
+    padding: 20px 40px 40px 10px;
   }
-
-  .block-list__icon {
-    width: 115px;
-    height: 115px;
+}
+@media only screen and (max-width: 768px) {
+  .block-list {
+    padding: 10px 20px 20px 10px;
   }
 
   .discriptin-block__list {
-    padding-top: 40px;
-    padding-left: 40px;
+    padding-left: 18px;
   }
 
   .list__title {
-    font-size: 32px;
-    line-height: 41px;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin-bottom: 12px;
   }
 
   .list__item {
-    font-size: 22px;
-    line-height: 28px;
-    padding-left: 40px;
-    background-image: url(../img/tb-list-item__check-img_800.png);
+    font-size: 16px;
+    padding-left: 28px;
   }
 
   .list__item:not(:last-of-type) {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -749,6 +748,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -891,6 +891,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -2530,3 +2531,5 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/*# sourceMappingURL=style.css.map */

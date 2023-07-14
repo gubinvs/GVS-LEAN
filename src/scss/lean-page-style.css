@@ -86,6 +86,12 @@
   margin-bottom: 18px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .block-list {
+    left: 0px;
+    padding: 20px 40px 40px 10px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .block-list__icon {
     display: inline;
@@ -158,9 +164,8 @@
 }
 
 .discription-card {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   width: 320px;
-  height: 480px;
   border: 1px solid #b9b9b9;
 }
 
@@ -169,23 +174,23 @@
 }
 
 .discription-card__img {
-  width: 315;
-  height: 210px;
+  width: 320;
+  height: 260px;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 50px;
 }
 
 .discription-card__img1 {
-  background-image: url(../../img/step-section/card-content__img4.png);
+  background-image: url(../../img/step-section/card-content__img1.jpg);
 }
 
 .discription-card__img2 {
-  background-image: url(../../img/step-section/card-content__img5.png);
+  background-image: url(../../img/step-section/card-content__img2.jpg);
 }
 
 .discription-card__img3 {
-  background-image: url(../../img/step-section/card-content__img6.png);
+  background-image: url(../../img/step-section/card-content__img3.jpg);
 }
 
 .discription-card__title {
@@ -355,7 +360,8 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a {
@@ -497,7 +503,8 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a {
@@ -787,4 +794,4 @@ select {
   .form-tel-footer__input {
     width: 190px;
   }
-}
+}/*# sourceMappingURL=lean-page-style.css.map */

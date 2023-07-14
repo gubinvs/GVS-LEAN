@@ -64,7 +64,8 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a {
@@ -144,4 +145,4 @@ select {
 .red-line__text_adaptation-section {
   top: 340px;
   right: -94px;
-}
+}/*# sourceMappingURL=index-adaptation-section.css.map */
