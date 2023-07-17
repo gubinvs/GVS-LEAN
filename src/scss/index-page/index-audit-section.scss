@@ -7,6 +7,10 @@
     margin-bottom: 80px;
 }
 
+.title-block-ias {
+    justify-content: flex-start;
+}
+
 .index-audit-section__img {
     position: absolute;
     top: 83px;
@@ -87,10 +91,16 @@
     .index-audit-section__discription-block {
         padding-right: 0px;
     }
+
+    .title-block__line-left_ias {
+        
+    }
 }
 
 @media only screen and (max-width: 1024px) {
-
+    .index-audit-section__img {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {

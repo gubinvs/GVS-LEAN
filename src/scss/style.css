@@ -624,6 +624,10 @@ button {
   margin-bottom: 80px;
 }
 
+.title-block-ias {
+  justify-content: flex-start;
+}
+
 .index-audit-section__img {
   position: absolute;
   top: 83px;
@@ -703,6 +707,11 @@ button {
 @media only screen and (max-width: 1280px) {
   .index-audit-section__discription-block {
     padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .index-audit-section__img {
+    display: none;
   }
 }
 /* Указываем box sizing */
