@@ -48,6 +48,7 @@
 .index-audit-section__discription-block {
   flex-direction: column;
   align-items: flex-end;
+  padding-right: 120px;
 }
 
 .discription-block__icon-list {
@@ -77,4 +78,10 @@
   font-weight: 300;
   font-size: 28px;
   line-height: 35px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .index-audit-section__discription-block {
+    padding-right: 0px;
+  }
 }/*# sourceMappingURL=index-audit-section.css.map */

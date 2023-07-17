@@ -60,10 +60,6 @@
   padding-left: 22px;
 }
 
-.block-list__icon {
-  display: none;
-}
-
 .list__title {
   font-size: 32px;
   font-weight: 500;
@@ -112,8 +108,12 @@
   }
 }
 @media only screen and (max-width: 640px) {
-  .block-list__icon {
-    display: none;
+  .index-main-section {
+    height: 563px;
+    background-position: right -180px bottom -190px;
+  }
+  .block-list {
+    top: 338px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -121,19 +121,12 @@
     background-position: right -180px bottom -190px;
   }
   .discriptin-block__list {
-    padding-top: 40px;
     padding-left: 0px;
   }
   .list__title {
     font-size: 28px;
     line-height: 35px;
     margin-bottom: 16px;
-  }
-  .list__item {
-    font-size: 18px;
-    line-height: 23px;
-    padding-left: 32px;
-    background-image: url(../img/tb-list-item__check-img_480.png);
   }
   .list__item:not(:last-of-type) {
     margin-bottom: 8px;
@@ -147,6 +140,7 @@
 
 .discription-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -158,6 +152,7 @@
   padding-bottom: 50px;
   width: 320px;
   border: 1px solid #b9b9b9;
+  margin-bottom: 20px;
 }
 
 .discription-card:not(:last-of-type) {
@@ -205,10 +200,41 @@
   line-height: 20px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .discription-block {
+    justify-content: flex-start;
+  }
+  .content-title__step-section {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .discription-card:not(:last-of-type) {
+    margin-right: 0px;
+  }
+  .discription-card {
+    margin-right: 0px;
+  }
+  .discription-card:nth-child(1) {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .discription-block {
+    justify-content: center;
+  }
+  .content-title__step-section {
+    padding-left: 20px;
+  }
+  .discription-card:nth-child(1) {
+    margin-right: 0px;
+  }
+}
 .index-audit-section {
   position: relative;
   max-width: 1280px;
   margin-bottom: 80px;
+  padding-right: 120px;
 }
 
 .index-audit-section__img {
