@@ -20,11 +20,6 @@
 //-- переменные
 @import 'variables/variables.scss';
 
-
-
-
-
-
 ::placeholder {
     padding-left: 20px;
     color: $borderColor;
@@ -114,6 +109,7 @@ button {
         padding: 0px 20px 0px 20px;
     }
 }
+
 
 
 @import 'header.scss';
