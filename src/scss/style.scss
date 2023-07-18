@@ -21,6 +21,10 @@
 @import 'variables/variables.scss';
 
 
+
+
+
+
 ::placeholder {
     padding-left: 20px;
     color: $borderColor;
@@ -67,7 +71,6 @@ img {
     padding: 0;
 }
 
-
 button {
     padding: 0;
     border: none;
@@ -78,7 +81,6 @@ button {
     считают, что необходимо оставлять стрелочный вид для кнопок */
     cursor: pointer;
 }
-
 
 @media only screen and (max-width: 1280px) {
     .container {

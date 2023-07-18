@@ -885,12 +885,17 @@ select {
 }
 
 .title-block_index-regulation-section {
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.discription-block_index-audit-section {
+.title-block__title_irs {
+  padding-left: 0px !important;
+  margin-right: 20px;
+}
+
+.discription-block-irs {
   justify-content: flex-start;
-  padding-left: 80px;
+  padding-left: 160px;
 }
 
 .index-regulation-section__img {
@@ -899,6 +904,7 @@ select {
 }
 
 .content-list__item_regulation {
+  padding-left: 44px !important;
   background-image: url(../../img/index-page/check-circle.svg);
 }
 
@@ -922,6 +928,11 @@ select {
   right: initial;
 }
 
+@media only screen and (max-width: 1280px) {
+  .discription-block-irs {
+    padding-left: 80px;
+  }
+}
 /* Указываем box sizing */
 *,
 *::before,
