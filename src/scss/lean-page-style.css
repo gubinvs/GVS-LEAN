@@ -236,6 +236,10 @@
   margin-bottom: 80px;
 }
 
+.title-block-ias {
+  justify-content: flex-start;
+}
+
 .index-audit-section__img {
   position: absolute;
   top: 83px;
