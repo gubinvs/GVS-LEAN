@@ -769,8 +769,14 @@ button {
   }
 }
 @media only screen and (max-width: 480px) {
+  .content-block-ias {
+    padding-top: 0px !important;
+  }
   .title-block__title {
     display: none;
+  }
+  .index-audit-section {
+    margin-bottom: 8px;
   }
 }
 /* Указываем box sizing */
