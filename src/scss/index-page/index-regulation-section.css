@@ -106,6 +106,7 @@ select {
 
 .title-block_index-regulation-section {
   justify-content: flex-end;
+  margin-bottom: 120px;
 }
 
 .title-block__title_irs {
@@ -120,7 +121,7 @@ select {
 
 .index-regulation-section__img {
   top: 200px;
-  right: 0px;
+  right: 20px;
 }
 
 .content-list__item_regulation {
