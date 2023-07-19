@@ -772,7 +772,6 @@ button {
 
   .title-block__line-left_ias {
     width: 90px;
-    height: 10px;
   }
 
   .index-audit-section__discription-block {
@@ -978,10 +977,6 @@ select {
   }
 }
 @media only screen and (max-width: 768px) {
-  .title-block__line-left_irs {
-    height: 10px;
-  }
-
   .content-block-irs {
     padding-top: 20px !important;
   }
