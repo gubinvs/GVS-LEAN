@@ -66,11 +66,22 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  
+    .discription-block__content__iadsec {
+        width: 65% !important;
+    }
  
 }
 
 @media only screen and (max-width: 1024px) {
+    .discription-block__content__iadsec {
+        width: 80% !important;
+    }
+
+    .index-adaptation-section__discription-block {
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+    
 
 }
 
