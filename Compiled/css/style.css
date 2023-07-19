@@ -1095,12 +1095,27 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.index-adaptation-section {
-  padding-top: 100px;
+.index-adaptation-section__title-block {
+  justify-content: flex-start;
 }
 
-.index-adaptation-section__title-block {
-  justify-content: center;
+.index-adaptation-section__img {
+  top: 120px !important;
+}
+
+.index-adaptation-section__discription-block {
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 137px;
+  padding-top: 132px;
+}
+
+.title-block__line-left_iadsec {
+  padding-left: 0px;
+}
+
+.title-block__title_iadsec {
+  margin-right: 20px;
 }
 
 .content__title_adaptation-section {
