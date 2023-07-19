@@ -163,7 +163,20 @@ select {
   }
 }
 @media only screen and (max-width: 768px) {
+  .title-block__line-left_irs {
+    height: 10px;
+  }
+  .content-block-irs {
+    padding-top: 20px !important;
+  }
   .discription-block-irs {
-    padding-left: 40px;
+    padding-left: 0px;
+  }
+  .title-block_index-regulation-section {
+    margin-bottom: 50px !important;
+  }
+  .content-list__item_regulation {
+    font-size: 20px;
+    line-height: 24px;
   }
 }/*# sourceMappingURL=index-regulation-section.css.map */
