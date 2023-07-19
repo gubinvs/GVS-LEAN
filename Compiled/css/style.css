@@ -1101,6 +1101,7 @@ select {
 
 .index-adaptation-section__img {
   top: 120px !important;
+  left: 20px;
 }
 
 .index-adaptation-section__discription-block {
