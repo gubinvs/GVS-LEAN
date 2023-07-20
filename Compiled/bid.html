@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация отраженная в брифе станет основанем для составления технического задания, которое, в свою очередь, будет сводом правил для разработки будущего сайта">
+    <link rel="icon" href="https://gubinvs.ru/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css?_v=20230720143520">
+    <link rel="canonical">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css?_v=20220807133642">
+    <title>Бриф на разработку сайта</title>
+  </head>
+  <body>
+    <div class="container brief-container">
+      <h1 class="brief__title">Заявка на коммерческое предложение</h1>
+      <form class="brief-form" method="post" action="php/send_brief.php">
+        <div class="brief-section">
+          <div class="brief-form__item">
+            <div class="brief-form__label">Дата заполнения:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input brief-form__input_date" type="date" id="dateIssue" value="12.04.2022" name="dateIssue" required>
+            </div>
+          </div>
+        </div>
+        <div class="brief-section">
+          <h3 class="brief__title_h3">Информация о компании:</h3>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Название компании:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="text" id="nameCompany" name="nameCompany" placeholder="Ваше имя, если частное лицо" required>
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Сфера деятельности:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="text" id="fieldActivity" name="fieldActivity">
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">ИНН организации:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="text" id="innCompany" min="10" name="innCompany" maxlength="10">
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Адрес текущего сайта:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="text" id="companySite" name="companySite">
+            </div>
+          </div>
+        </div>
+        <div class="brief-section">
+          <h3 class="brief__title_h3">Контактная информация:</h3>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Контактное лицо:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="text" id="companyContact" name="companyContact" required>
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Телефон:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="tel" id="companyPhone" name="companyPhone" required>
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">E-mail:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="email" id="companyEmail" name="companyEmail" required>
+            </div>
+          </div>
+        </div>
+        <div class="brief-section">
+          <h3 class="brief__title_h3">Дизайн и функционал сайта:</h3>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Сайты конкурентов:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="text" id="siteRival" name="siteRival">
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Нравятся сайты:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="tel" id="siteLike" name="siteLike">
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Фирменный шрифт:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input" type="text" id="companyFonts" name="companyFonts">
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Логотип компании:</div>
+            <div class="bf-item__input-block">
+              <input class="brief-form__input_file form-control" type="file" id="companyLogo" name="companyLogo">
+            </div>
+          </div>
+          <div class="brief-form__item">
+            <div class="brief-form__label">Верстка сайта:</div>
+            <div class="bf-item__input-block">
+              <select class="brief-form__select" name="sitelayout">
+                <option value="Адаптивная">Адаптивная</option>
+                <option value="Desktop - 1920px">Desktop - 1920px</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button class="brief-form__button_submit" type="submit">Отправить бриф</button>
+        <input type="hidden" name="act" value="order">
+      </form>
+    </div>
+  </body>
+</html>
