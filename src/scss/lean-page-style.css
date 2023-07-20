@@ -89,6 +89,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .title-block {
+    margin-bottom: 40px;
+  }
   .block-list {
     padding: 10px 20px 20px 10px;
   }
@@ -342,6 +345,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .index-audit-section {
+    margin-bottom: 0px;
+  }
   .title-block-ias {
     margin-bottom: 20px;
   }
@@ -357,7 +363,6 @@
   }
   .title-block__line-left_ias {
     width: 90px;
-    height: 10px;
   }
   .index-audit-section__discription-block {
     align-items: flex-start;
@@ -382,7 +387,7 @@
 }
 @media only screen and (max-width: 480px) {
   .content-block-ias {
-    padding-top: 0px !important;
+    padding-top: 40px !important;
   }
   .title-block__title {
     display: none;
@@ -555,8 +560,21 @@ select {
   }
 }
 @media only screen and (max-width: 768px) {
+  .index-regulation-section {
+    margin-bottom: 0px;
+  }
+  .content-block-irs {
+    padding-top: 20px !important;
+  }
   .discription-block-irs {
-    padding-left: 40px;
+    padding-left: 0px;
+  }
+  .title-block_index-regulation-section {
+    margin-bottom: 20px !important;
+  }
+  .content-list__item_regulation {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 /* Указываем box sizing */
@@ -660,12 +678,28 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.index-adaptation-section {
-  padding-top: 100px;
+.index-adaptation-section__title-block {
+  justify-content: flex-start;
 }
 
-.index-adaptation-section__title-block {
-  justify-content: center;
+.index-adaptation-section__img {
+  top: 120px !important;
+  left: 20px;
+}
+
+.index-adaptation-section__discription-block {
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 137px;
+  padding-top: 132px;
+}
+
+.title-block__line-left_iadsec {
+  padding-left: 0px;
+}
+
+.title-block__title_iadsec {
+  margin-right: 20px;
 }
 
 .content__title_adaptation-section {
@@ -707,6 +741,28 @@ select {
   right: -94px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .discription-block__content__iadsec {
+    width: 65% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .discription-block__content__iadsec {
+    width: 80% !important;
+  }
+  .index-adaptation-section__discription-block {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .discription-block__content__iadsec {
+    width: 100% !important;
+  }
+  .title-block__line-left_iadsec {
+    width: 90px !important;
+  }
+}
 .index-task-section {
   position: relative;
   max-width: 1280px;
@@ -720,6 +776,7 @@ select {
 
 .index-task-block {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 100px;
 }
