@@ -90,7 +90,6 @@
 
     .index-task-block {
         justify-content: flex-start;
-        padding-left: 100px;
     }
 
     .index-task-card {
@@ -106,11 +105,42 @@
         margin-right: 0px;
     }
 
+    .case-block {
+        justify-content: flex-end;
+    }
+
+    .case-block__card {
+        width: 600px;
+    }
+
+    .case-block-card__action, 
+    .case-block-card__result {
+        width: 100%;
+    }
+
+    .case-block__card {
+        flex-direction: column;
+    }
+
+    .result__title {
+        padding-top: 20px;
+    }
+
+    .case-block-card__icon {
+        width: 50px;
+        height: 50px;
+        transform: rotate(90deg);
+    }
+
+    .action__discr {
+        margin-bottom: 20px;
+    }
+
+
 }
 
 @media only screen and (max-width: 768px) {
     .index-task-block {
-        
         padding-left: 0px;
     }
 
